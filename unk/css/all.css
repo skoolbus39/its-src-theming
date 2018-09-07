@@ -14,13 +14,13 @@ font-family:'UniversLTW01-55Oblique';
 */
 
 @font-face {
-  font-family: 'Hughs';
-  src: url('https://www.unk.edu/fonts/Hughs.eot'); /* IE9 Compat Modes */
-  src: url('https://www.unk.edu/fonts/Hughs.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('https://www.unk.edu/fonts/Hughs.woff2') format('woff2'), /* Super Modern Browsers */
-       url('https://www.unk.edu/fonts/Hughs.woff') format('woff'), /* Pretty Modern Browsers */
-       url('https://www.unk.edu/fonts/Hughs.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('https://www.unk.edu/fonts/Hughs.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-family: 'Hughs';
+    src: url('https://www.unk.edu/fonts/Hughs.eot'); /* IE9 Compat Modes */
+    src: url('https://www.unk.edu/fonts/Hughs.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('https://www.unk.edu/fonts/Hughs.woff2') format('woff2'), /* Super Modern Browsers */
+    url('https://www.unk.edu/fonts/Hughs.woff') format('woff'), /* Pretty Modern Browsers */
+    url('https://www.unk.edu/fonts/Hughs.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('https://www.unk.edu/fonts/Hughs.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 
@@ -56,10 +56,10 @@ figure.image figcaption {
 }
 .img_left, .align-left {float:left; margin-right:10px !important;}
 .img_right, .align-right {float:right; margin-left:10px !important;}
-.align-center {    
+.align-center {
     margin: 0 auto !important;
     width: max-content;
-    
+
 }
 
 p, #contentWrapper{font-family:'Univers LT W01_55 Roman', Arial, sans-serif; font-size: 17px; line-height: 23px; color: #231f20;}
@@ -113,11 +113,11 @@ div.skip_links a:hover, div.skip_links a:active, div.skip_links a:visited {text-
 #logo{float: left; text-align: left; padding-top: 31px;}
 #logo img{max-width: 100%; width: 292px;}
 #logo-mobile{
-    display:none; 
+    display:none;
     float: none;
     padding: 15px 5% 0;
     text-align: center;
-    }
+}
 #menuSearch{float: right; padding-top: 25px;}
 #secondaryMenu{float: right; padding: 3px 0px 0px 0px;}
 #secondaryMenu, #secondaryMenu a:link, #secondaryMenu a:visited{font-family:'UniversLTW01-57Condense_723821', arial, sans-serif; color: #ffffff; font-size: 17px; text-decoration: none;}
@@ -128,7 +128,7 @@ div.skip_links a:hover, div.skip_links a:active, div.skip_links a:visited {text-
 #searchField .hide {border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;
 }
 #searchField input {border:0px; margin:0px;}
-#searchField input#searchTxt {padding: 4px 3px 2px 7px; font-family:'UniversLTW01-47LightCn', arial, sans-serif; font-size: 15px; color: #004d86; line-height: 15px; width:91%; -webkit-appearance:none; border-radius:0; -webkit-border-radius:0;}    
+#searchField input#searchTxt {padding: 4px 3px 2px 7px; font-family:'UniversLTW01-47LightCn', arial, sans-serif; font-size: 15px; color: #004d86; line-height: 15px; width:91%; -webkit-appearance:none; border-radius:0; -webkit-border-radius:0;}
 #searchBtn {bottom: 0; padding: 0; position: absolute; right: 0; height:25px;}
 #___gcse_0 { width:100%;}
 .gsc-control-searchbox-only {width:100%;}
@@ -247,7 +247,7 @@ ul.flexnav-show {display:block !important;}
     .flexnav li {position: static; list-style: none; float: left; display: block; overflow: visible;}
     .flexnav li a {border: none;}
     .flexnav li > ul {position: absolute; top: auto; left: -6px; border-top: 4px solid #ce8901; background: none repeat scroll 0 0 rgba(255, 255, 255, 0.95); width: 615px; padding: 15px 25px 22px; display:none;}
-    
+
     .flexnav li > ul li {width: 50%; float: left;}
     .flexnav li ul li > ul {margin-left: 100%; top: 0;}
     .flexnav li ul li a {border-bottom: none;}
@@ -259,42 +259,42 @@ ul.flexnav-show {display:block !important;}
 }
 
 @media print {
-#headerWrapper {
-   
-}
+    #headerWrapper {
 
-#footerWrapper {
-    display:none;
-}
+    }
 
-#breadcrumb {
-    display: none;
-}
+    #footerWrapper {
+        display:none;
+    }
 
-#rightContent {
-    display: none;
-}
+    #breadcrumb {
+        display: none;
+    }
 
-#tab_content div {
-    display:block !important;
-}
+    #rightContent {
+        display: none;
+    }
 
-#logo-mobile {
-    padding: 20px 5% 20px;
-    display: block;
-}
+    #tab_content div {
+        display:block !important;
+    }
 
-#logo {
-	display:none;
-}
+    #logo-mobile {
+        padding: 20px 5% 20px;
+        display: block;
+    }
 
-#menuSearch {
-	display:none;
-}
+    #logo {
+        display:none;
+    }
 
-#mainMenu {
-	display:none;
-}
+    #menuSearch {
+        display:none;
+    }
+
+    #mainMenu {
+        display:none;
+    }
 }
 
 
@@ -339,17 +339,17 @@ html[xmlns] .slides {display: block;}
 .flex-caption.dark h3, .flex-caption.dark p{color: #ffffff;}
 
 .close-slider {
-position:absolute;
-bottom:25px;
-z-index:10;
-right:20px;    
-padding:0px 5px 0px 5px;
-color:#004986;
-height:25px;
-width: 70px;
-border-radius:3px 3px 0px 0px;
-text-align:left;
-background:rgba(0, 0, 0, 0.6) url(../images/vertical-arrows.png) top right no-repeat;
+    position:absolute;
+    bottom:25px;
+    z-index:10;
+    right:20px;
+    padding:0px 5px 0px 5px;
+    color:#004986;
+    height:25px;
+    width: 70px;
+    border-radius:3px 3px 0px 0px;
+    text-align:left;
+    background:rgba(0, 0, 0, 0.6) url(../images/vertical-arrows.png) top right no-repeat;
 }
 
 .close-slider p {font-family: "UniversLTW01-57Condense_723821",arial,sans-serif; text-transform:uppercase; color:#ffffff; cursor: pointer;}
@@ -357,16 +357,16 @@ background:rgba(0, 0, 0, 0.6) url(../images/vertical-arrows.png) top right no-re
 div.open {display:block;}
 div.close {display:none;}
 .open-slider {
-z-index:10;
-display:none;
-background:rgba(0, 0, 0, 0.6) url(../images/vertical-arrows.png) left -36px no-repeat;
-width:25px;
-height:25px;
-position:absolute;
-bottom:-29px;
-right:20px;
-border-radius:0px 0px 3px 3px;
-cursor: pointer;
+    z-index:10;
+    display:none;
+    background:rgba(0, 0, 0, 0.6) url(../images/vertical-arrows.png) left -36px no-repeat;
+    width:25px;
+    height:25px;
+    position:absolute;
+    bottom:-29px;
+    right:20px;
+    border-radius:0px 0px 3px 3px;
+    cursor: pointer;
 }
 
 .open-slider:hover {background:rgba(0, 0, 0, 0.8) url(../images/vertical-arrows.png) left -36px no-repeat;}
@@ -448,7 +448,7 @@ button.full {position:absolute; right:5px; bottom:5px; background:#004d86; color
     color: #004d86;
     margin: 0px 0px 3px;
     text-transform:uppercase;
-    
+
 
 }
 
