@@ -43,7 +43,7 @@ let banner = [
 // scss - build the scss to the build folder, including the required paths, and writing out a sourcemap
 gulp.task('screenScss', () => {
   $.fancyLog(`-> Compiling screen scss: ${ pkg.paths.build.css }${pkg.vars.scssName}`);
-  return gulp.src(`${pkg.paths.src.scss }main.scss`)
+  return gulp.src(`${pkg.paths.src.scss }all.scss`)
     .pipe(customPlumber('Error Running Sass'))
     .pipe($.sassGlob())
     .pipe($.sourcemaps.init({ loadMaps: true }))
@@ -247,7 +247,7 @@ gulp.task('img', () => gulp.src(pkg.paths.src.img, {allowEmpty:true})
 //delete dist folder
 gulp.task('clean:dist', function() {
 	return $.del.sync('../dist/*', {force: true});
-})
+});
 
 gulp.task('browsersync', (done) => {
   // to close browser tab when browserSync disconnects
