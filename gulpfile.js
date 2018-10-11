@@ -61,11 +61,10 @@ gulp.task('screenScss', () => {
 });
 
 // css task - combine & minimize any vendor CSS into the public css folder
-gulp.task('screenCss', gulp.series('screenScss', () => {
+gulp.task('screenCss', () => {
   $.fancyLog('-> Building screen css');
   return gulp.src(pkg.globs.distCss)
     .pipe(customPlumber('Error Running Sass'))
-    .pipe($.newer({ dest: pkg.paths.dist.css + pkg.vars.siteCssName }))
     .pipe($.print())
     .pipe($.sourcemaps.init({ loadMaps: true }))
     .pipe($.postcss([ require(`${__dirname}/node_modules/postcss-normalize`)({ forceImport: true }) ]))
@@ -85,7 +84,7 @@ gulp.task('screenCss', gulp.series('screenScss', () => {
     .pipe(gulp.dest(pkg.paths.dist.css))
     .pipe($.filter('**/*.css'))
     .pipe(browserSync.reload({ stream:true }));
-}));
+});
 
 /* ----------------- */
 /* PRINT CSS GULP TASKS
@@ -245,8 +244,9 @@ gulp.task('img', () => gulp.src(pkg.paths.src.img, {allowEmpty:true})
   .pipe(gulp.dest(pkg.paths.dist.img)));
 
 //delete dist folder
-gulp.task('clean:dist', function() {
-	return $.del.sync('../dist/*', {force: true});
+gulp.task('clean:dist', (done) => {
+	$.del.sync('../dist/*', {force: true});
+	done();
 });
 
 gulp.task('browsersync', (done) => {
@@ -274,8 +274,11 @@ gulp.task('browsersync', (done) => {
 /* ----------------- */
 /* Run TASKS
 /* ----------------- */
+
+gulp.task('screenAll', gulp.series('screenScss', 'screenCss'));
+
 gulp.task('screenScssWatch', () => {
-	gulp.watch([ `${pkg.paths.src.scss }**/*.scss`, '!print.scss' ], gulp.series('screenCss'));
+	gulp.watch([ `${pkg.paths.src.scss }**/*.scss`, '!print.scss' ], gulp.series('screenAll'));
 });
 
 gulp.task('printScssWatch', () => {
@@ -305,7 +308,7 @@ gulp.task('fontsWatch', () => {
 
 gulp.task('preWatch', gulp.series(
 		'htmlDistCopy',
-		'screenScss',
+		'screenAll',
 		'printCss',
 		'cached-lint',
 		'js',
