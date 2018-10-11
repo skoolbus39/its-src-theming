@@ -46,7 +46,7 @@
   },
   "globs": {
     "distCss": [
-      "assets/build/css/main.css"
+      "assets/build/css/all.css"
     ],
     "distPrintCss": [
       "assets/build/css/print.css"
