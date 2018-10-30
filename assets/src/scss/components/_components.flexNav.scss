@@ -1,0 +1,62 @@
+/////////////////////////////////
+// !THEME / COMPONENTS / FLEXNAV
+/////////////////////////////////
+
+// !style overwrites for the Flexnav library
+
+// hide the downward arrow injected by Flexnav
+.navicon {
+	display: none;
+}
+
+.flexnav li a {
+	background-color: transparent;
+	padding:$length-em-1 $length-em-4;
+	border-bottom: 0;
+}
+
+.flexnav li ul li a {
+	padding: 0 $length-em-4;
+	background-color: transparent;
+	border-bottom: 0;
+}
+
+.flexnav .item-with-ul {
+	position: relative;
+}
+
+.flexnav .touch-button {
+	z-index: 200;
+	background-color: transparent;
+}
+
+.flexnav .item-with-ul .touch-button {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@include mq(731px, min, width) {
+	.flexnav {
+		max-height: unset;
+	}
+
+	.flexnav li {
+		display: block;
+		background-color: transparent;
+		overflow: visible;
+		width: auto;
+	}
+
+	.flexnav li a {
+		border: 0;
+	}
+
+	.flexnav .touch-button {
+		display: none;
+	}
+}

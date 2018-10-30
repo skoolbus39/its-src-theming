@@ -6,8 +6,8 @@
 // !BRAND COLORS
 
 // Define brand colors
-$color-brand-alpha: #30c;
-$color-brand-beta: #c00;
+$color-brand-alpha: #004d86;
+$color-brand-beta: #ce8901;
 
 
 // Assign names to brand colors
@@ -18,7 +18,7 @@ $color-brand-beta: #c00;
 // !UI COLORS
 // Assign colors to elements
 $white: #fff;
-$black: #000;
+$black: #231f20;
 
 $mix-white-black: mix($white, $black); // gray
 
@@ -50,9 +50,9 @@ $color-light-text: $gray-dark;
 // !Links
 $color-link: $color-brand-alpha;
 // TODO: finalize state colors for example theme
-$color-link-visited: darken($color-link, 10%);
-$color-link-hover: darken($color-link, 10%);
-$color-link-active: darken($color-link, 10%);
+$color-link-visited: darken($color-brand-beta, 10%);
+$color-link-hover: darken($color-brand-beta, 10%);
+$color-link-active: darken($color-brand-beta, 10%);
 
 
 // !Inverse
