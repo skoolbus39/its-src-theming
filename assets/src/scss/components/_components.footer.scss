@@ -114,7 +114,10 @@
     }
 
     .univ-logo {
-      width: 54%;
+      //width: 54%;
+      width: auto !important;
+      //flex:1;
+      //height: 100%;
       max-width: 9em;
       @include mt-3;
       fill: #555656;
