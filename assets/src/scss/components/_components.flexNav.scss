@@ -42,6 +42,7 @@
 
 @include mq(731px, min, width) {
 	.flexnav {
+		max-height: 100%;
 		max-height: unset;
 	}
 
