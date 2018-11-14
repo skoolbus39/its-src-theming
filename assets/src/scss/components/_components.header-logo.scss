@@ -1,0 +1,66 @@
+////////////////////////////////////
+// !THEME / COMPONENTS / HEADER LOGO
+////////////////////////////////////
+
+.unk {
+	.dcf-header-global {
+		.logo-mobile {
+			display: block;
+		}
+
+		.logo-mobile img {
+			display: block;
+		}
+
+		.logo-desktop {
+			display:none;
+		}
+	}
+}
+
+@include mq(731px, min, width) {
+	.unk{
+		.dcf-header-global {
+			.logo-mobile {
+				display: none;
+			}
+
+			.logo-desktop {
+				display: inline-block;
+				width: 300px;
+				float: left;
+			}
+
+
+
+			@supports (grid-area: auto) {
+				.logo-desktop {
+					width: fit-content !important;
+					height: 95%;
+					align-self: end;
+				}
+
+					.logo-desktop img {
+						height: 100%;
+					}
+			}
+		}
+	}
+}
+
+@include mq(1126, min, width) {
+	.unk {
+		.dcf-header-global {
+			.logo-desktop {
+				@include mt-1;
+				height: auto;
+				align-self: start;
+				width: 310px;
+			}
+
+			.logo-desktop img {
+				height: auto;
+			}
+		}
+	}
+}

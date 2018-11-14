@@ -1,0 +1,83 @@
+/////////////////////////////////
+// !THEME / COMPONENTS / FLEXNAV
+/////////////////////////////////
+
+// !style overwrites for the Flexnav library
+
+// hide the downward arrow injected by Flexnav
+.unk .dcf-nav-menu-toggle-btn .navicon {
+	display: none;
+}
+
+.flexnav li a {
+	background-color: transparent;
+	padding:$length-em-1 $length-em-4;
+	border-bottom: 0;
+}
+
+.flexnav li ul li a {
+	padding: 0 $length-em-4;
+	background-color: transparent;
+	border-bottom: 0;
+}
+
+.flexnav .item-with-ul {
+	position: relative;
+}
+
+.flexnav .touch-button {
+	z-index: 200;
+	background-color: transparent;
+}
+
+.flexnav .item-with-ul .touch-button {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	background-color: #ccc;
+	transition: all 300ms ease-out;
+	z-index: 201;
+
+	&.active {
+		background-color: $color-brand-alpha;
+	}
+}
+
+.flexnav .touch-button .navicon {
+	position: absolute;
+	color: $color-brand-alpha;
+	top: 50%;
+	transform: translate(-50%, -54.5%);
+	transition: all 400ms ease-out;
+	left: 50%;
+	font-size: 0.9em;
+}
+
+.flexnav .touch-button.active .navicon {
+		transform: translate(-50%, -54.5%) rotateX(-180deg);
+		color: $white;
+		perspective: 1000px;
+		top: 20%;
+}
+
+@include mq(731px, min, width) {
+	.flexnav {
+		max-height: 100%;
+		max-height: unset;
+	}
+
+	.flexnav li {
+		display: block;
+		background-color: transparent;
+		overflow: visible;
+		width: auto;
+	}
+
+	.flexnav li a {
+		border: 0;
+	}
+
+	.flexnav .touch-button {
+		display: none;
+	}
+}

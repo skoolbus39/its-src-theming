@@ -76,7 +76,8 @@ gulp.task('screenCss', () => {
       discardDuplicates: true,
       discardEmpty: true,
       minifyFontValues: true,
-      minifySelectors: true
+      minifySelectors: true,
+			zindex: false
     }))
     .pipe($.header(banner, { pkg: pkg }))
     .pipe($.sourcemaps.write('./'))

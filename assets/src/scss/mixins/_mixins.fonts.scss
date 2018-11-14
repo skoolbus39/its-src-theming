@@ -1,0 +1,33 @@
+//////////////////////////
+// !THEME / MIXINS / FONTS
+//////////////////////////
+
+
+// !Univers
+@mixin font-roman($imp:null) {
+	font-family: 'Univers LT W01_55 Roman', arial, sans-serif $imp;
+}
+@mixin font-light-cn($imp:null) {
+	font-family: 'UniversLTW01-47LightCn', arial, sans-serif $imp;
+}
+@mixin font-cn($imp:null) {
+	font-family: 'UniversLTW01-57Condense_723821', arial, sans-serif $imp;
+}
+@mixin font-bold-cn($imp:null) {
+	font-family: 'UniversLTW01-67BoldCn', arial, sans-serif $imp;
+}
+@mixin font-bold($imp:null) {
+	font-family: 'Univers LT W01_65 Bold', arial, sans-serif $imp;
+}
+@mixin font-bold-ob($imp:null) {
+	font-family: 'UniversLTW01-65BoldObli', arial, sans-serif $imp;
+}
+@mixin font-bold-cn-ob($imp:null) {
+	font-family: 'UniversLTW01-67BoldCnOb', arial, sans-serif $imp;
+}
+@mixin font-light-cn-ob($imp:null) {
+	font-family: 'UniversLTW01-47LightCnO', arial, sans-serif $imp;
+}
+@mixin font-ob($imp:null) {
+	font-family: 'UniversLTW01-55Oblique', arial, sans-serif $imp;
+}

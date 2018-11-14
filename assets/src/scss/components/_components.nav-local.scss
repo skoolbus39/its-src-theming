@@ -2,48 +2,178 @@
 // !THEME / COMPONENTS / NAV: LOCAL
 ///////////////////////////////////
 
+.unk {
+  .dcf-nav-local {
 
-.example .dcf-nav-local > ul > li > a {
-  font-weight: bold;
-  @include ls-1;
-  text-transform: uppercase;
+    .dcf-nav-menu {
+      background-color: #fff;
+      @include mb-0;
+      @include pl-0;
+      list-style: none;
+      @include font-cn;
+    }
+
+    .dcf-nav-menu li a {
+      color: $color-link;
+
+      &:active {
+        color: $color-link-active;
+      }
+
+      &:hover {
+        color: $color-link-hover;
+      }
+    }
+
+    .dcf-nav-menu > li{
+      border-top: 1px solid #e3e3e3;
+
+      &:last-child {
+        @include mb-0;
+      }
+
+      & > a {
+        @include uppercase;
+        @include txt-h4;
+
+        &:focus {
+          text-decoration: underline;
+        }
+      }
+
+      &:active {
+        & > a {
+          color: $color-link-active;
+          text-decoration: underline;
+        }
+      }
+
+      &:hover {
+        & > a {
+          color: $color-link-hover;
+        }
+      }
+    }
+
+    .dcf-nav-menu li {
+      @include mb-0;
+    }
+
+    .dcf-nav-menu-child {
+      list-style: inherit;
+      @include pl-0;
+      @include mt-0;
+      @include relative;
+      z-index: 201;
+    }
+
+    .dcf-nav-menu-child li a {
+      @include txt-h5;
+    }
+  }
 }
 
-
-.example .dcf-nav-local > ul {
-  display: grid;
-  @include txt-xs;
-  grid-gap: 1em 5vw;
-  grid-template-columns: repeat(auto-fit, minmax(#{ms(18)}em, 1fr));
+@include mq(730px, max, width) {
+  .unk {
+    .dcf-nav-local {
+      // styles from dcf-bleed , incorporate the include when its created
+      left: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      position: relative;
+      right: 50%;
+      width: 100vw;
+    }
+  }
 }
 
+@include mq(731px, min, width) {
+  .unk{
+    .dcf-nav-local {
+      @include mt-4;
 
-.example .dcf-nav-local ul ul {
-  @include txt-xs;
-  @include pt-4;
+      .dcf-nav-menu {
+        overflow: visible;
+        opacity: 1;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        background-color: transparent;;
+      }
+
+      .dcf-nav-menu li a {
+        color: $color-link;
+        padding: 0 0 $length-em-4;
+
+        &:active {
+          color: $color-link-active;
+          text-decoration: underline;
+        }
+
+        &:hover {
+          color: $color-link-hover;
+        }
+      }
+
+      .dcf-nav-menu > li {
+        border-top: 0;
+        position: static;
+
+        &:not(:first-child) {
+          & > a {
+            padding-left: $length-em-5;
+          }
+        }
+
+        & > a {
+          color: $white;
+
+        }
+
+        &:active, &:focus {
+          & > a {
+            color: $white;
+          }
+        }
+
+        &:hover {
+          & > a {
+            color: $white;
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .dcf-nav-menu-child {
+        position: absolute;
+        column-count: 2;
+        column-gap: 1em;
+        width: 37.1em;
+        right: 0;
+        left: auto;
+        top: 100%;
+        background-color: rgba(255,255,255,0.95);
+        border-top: 4px solid $color-brand-beta;
+        padding: $length-em-3 $length-em-5 $length-em-4;
+      }
+
+      .dcf-nav-menu-child li{
+        display: inline-block;
+        width: 100%;
+        float: none;
+      }
+
+      .dcf-nav-menu .mobile-only {
+        display: none;
+      }
+    }
+  }
 }
 
-
-@include mq(md, min, width) {
-
-  .example .dcf-nav-local {
-    grid-area: nav1;
-    position: relative;
+@include mq(1126, min, width) {
+  .unk{
+    .dcf-nav-local {
+      @include mt-1;
+    }
   }
-
-  .example .dcf-nav-local > ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .example .dcf-nav-local > ul > li:not(:last-child) {
-    margin-right: 2vw;
-  }
-
-  .example .dcf-nav-local ul ul {
-    position: absolute;
-    @include sr-only;
-  }
-
 }
