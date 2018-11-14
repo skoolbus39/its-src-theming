@@ -39,7 +39,7 @@
 	z-index: 201;
 
 	&.active {
-		background-color: mix($color-brand-beta, $black, 90%);
+		background-color: $color-brand-alpha;
 	}
 }
 
@@ -47,13 +47,15 @@
 	position: absolute;
 	color: $color-brand-alpha;
 	top: 50%;
-	transform: translate(-50%, -34%);
+	transform: translate(-50%, -54.5%);
 	transition: all 400ms ease-out;
 	left: 50%;
+	font-size: 0.9em;
 }
 
 .flexnav .touch-button.active .navicon {
-		transform: translate(-50%, -34%) rotateX(-180deg);
+		transform: translate(-50%, -54.5%) rotateX(-180deg);
+		color: $white;
 		perspective: 1000px;
 		top: 20%;
 }

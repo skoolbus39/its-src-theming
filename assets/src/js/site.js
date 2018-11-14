@@ -1,7 +1,7 @@
 $(
 		// initialize FlexNav
 		$(".flexnav").flexNav({
-			'hoverIntent': true,
-			'hoverIntentTimeout': 150
+			'hoverIntent': false,
+			'hoverIntentTimeout': 130
 		})
 );
