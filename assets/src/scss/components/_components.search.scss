@@ -1,0 +1,48 @@
+///////////////////////////////
+// !THEME / COMPONENTS / SEARCH
+///////////////////////////////
+
+.unk {
+
+  // search in header
+  .dcf-header {
+    .dcf-search-input {
+      width: 92%;
+      border: 0;
+      @include font-light-cn;
+      color: $color-brand-alpha;
+      @include pb-0;
+      @include pt-0;
+
+    }
+
+    .dcf-search-toggle {
+      flex: 1 1 8%;
+      width: 8%;
+      min-width: 30px;
+      height: 100%;
+      -webkit-appearance: none;
+      padding: 0;
+      border: 0;
+    }
+
+    .dcf-search-toggle img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: contain;
+    }
+  }
+}
+
+@include mq(731px, min, width) {
+  .unk {
+    .dcf-header {
+      .dcf-search-input {
+        width: 87.5%;
+        flex: 0 1 87.5%
+      }
+    }
+  }
+
+}

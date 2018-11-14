@@ -39,14 +39,15 @@
   "vars": {
     "siteCssName": "site.combined.min.css",
     "printCssName": "print.min.css",
-    "scssName": "styles.scss",
-    "cssName": "styles.css",
+    "scssName": "all.scss",
+    "cssName": "all.css",
     "jsName": "script.js",
     "buildJsName": "buildScript.js"
   },
   "globs": {
     "distCss": [
-      "assets/build/css/main.css"
+      "assets/src/css/**/*.css",
+      "assets/build/css/all.css"
     ],
     "distPrintCss": [
       "assets/build/css/print.css"
@@ -74,7 +75,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-es2015": "^6.16.0",
     "bootstrap-sass": "^3.3.7",
-    "browser-sync": "^2.23.2",
+    "browser-sync": "^2.26.0",
     "chalk": "^1.1.3",
     "dcf": "git+https://github.com/d-c-n/dcf.git",
     "del": "^3.0.0",
@@ -84,7 +85,7 @@
     "gulp-babel": "^7.0.0",
     "gulp-cached": "^1.1.1",
     "gulp-concat": "^2.6.1",
-    "gulp-cssnano": "^2.1.2",
+    "gulp-cssnano": "^2.1.3",
     "gulp-debug": "^2.1.2",
     "gulp-download": "^0.0.1",
     "gulp-eslint": "^4.0.2",

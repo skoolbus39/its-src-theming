@@ -2,19 +2,56 @@
 // !THEME / COMPONENTS / NAV: TOGGLE
 ////////////////////////////////////
 
-
-@include mq(md, max, width) {
-
-  .example .dcf-mobile-nav-toggle {
-    bottom: 0;
-    height: 4em;
-    position: fixed;
-    width: 25%;
-    z-index: 2;
+.unk {
+  .dcf-nav-menu-toggle-btn {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    -webkit-appearance: none;
+    border: 0;
+    background: transparent;
+    //outline: 1px solid white;
+    width: 3.2em;
   }
 
-  .example .dcf-nav-toggle {
+  .dcf-nav-menu-toggle-btn::after, .dcf-nav-menu-toggle-btn::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 38%;
     left: 0;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
   }
 
+  .dcf-nav-menu-toggle-btn::before {
+    top: 0;
+  }
+
+  .dcf-nav-menu-toggle-btn::after {
+    top: 62.266%;
+  }
+
+  .dcf-nav-menu-toggle-btn .touch-button {
+    width: 100%;
+    height: 100%;
+  }
+
+  @include mq(sm, min, width) {
+    .dcf-nav-menu-toggle-btn::after, .dcf-nav-menu-toggle-btn::before {
+      height: 35.7%;
+    }
+
+    .dcf-nav-menu-toggle-btn::after {
+      top: 64%;
+    }
+  }
+
+  @include mq(731, min, width) {
+    .dcf-nav-menu-toggle-btn {
+      display: none;
+    }
+  }
 }
+

@@ -2,20 +2,89 @@
 // !THEME / COMPONENTS / NAV: GLOBAL
 ////////////////////////////////////
 
+.unk {
+  .dcf-nav-global {
+    color: $white;
 
-.example .dcf-nav-global li {
-  display: inline;
-}
+    .dcf-nav-menu {
+      list-style-type: none;
+      @include font-cn;
+      @include d-flex;
+      @include pl-0;
+      @include mb-0;
+      flex-flow: row nowrap;
+      @include jc-flex-end;
+    }
 
-.example .dcf-nav-global li:not(:last-child) {
-  margin-right: 2vw;
-}
+    .dcf-nav-menu li {
+      position: relative;
 
+      &:not(:last-child) {
+        padding-right: 1em;
+      }
 
-@include mq(md, min, width) {
+      &:not(:last-child)::after {
+        position: absolute;
+        content: '';
+        width: 1px;
+        height: 1em;
+        top: 50%;
+        right: 0.5em;
+        transform: translateY(-50%);
+        background-color: $white;
+      }
+    }
 
-  .example .dcf-nav-global {
-    grid-area: nav2;
+    .dcf-nav-menu li a{
+      color: $white;
+
+      &:hover, &:active {
+        color: $white;
+        text-decoration: underline;
+      }
+    }
   }
+}
 
+@include mq(730px, max, width) {
+  .unk{
+    .dcf-nav-global {
+      display: none;
+    }
+  }
+}
+
+@include mq(731px, min, width) {
+  .unk{
+    .dcf-nav-global {
+      .dcf-nav-menu {
+        @include pt-2;
+      }
+
+      .dcf-nav-menu li {
+        @include mb-0;
+      }
+    }
+  }
+}
+
+@include mq(1126, min, width) {
+  .unk {
+    .dcf-nav-global {
+      .dcf-nav-menu {
+        @include pt-0;
+        @include mr-2;
+      }
+
+      .dcf-nav-menu li {
+        &:not(:last-child) {
+          padding-right: 1.6em;
+        }
+
+        &:not(:last-child)::after {
+          right: 0.8em;
+        }
+      }
+    }
+  }
 }
