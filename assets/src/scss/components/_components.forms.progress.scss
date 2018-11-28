@@ -49,7 +49,7 @@
 		background-image:
 						-webkit-linear-gradient(-45deg, transparent 33%, fade_out($black, 0.8) 33%, fade_out($black, 0.8) 66%, transparent 66%),
 						-webkit-linear-gradient(top, fade_out($gray-light, 0.9), fade_out($gray-light, .9)),
-						-webkit-linear-gradient(left, $color-brand-alpha, $color-brand-beta 50%, $color-brand-alpha);
+						-webkit-linear-gradient(to right, $color-brand-alpha 0%, $color-brand-beta 50%, $color-brand-alpha 100%);
 		background-size: 50px 100%, 100% 100%, 100% 100%;
 		animation: progressAnimate infinite linear 3s;
 
