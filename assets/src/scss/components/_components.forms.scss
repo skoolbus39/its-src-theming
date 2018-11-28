@@ -4,35 +4,68 @@
 
 
 // Legend
-.example .dcf-legend {
+.unk .dcf-legend {
   @include mb-1;
 }
 
 
 // Form group
-.example .dcf-form-group {
-  @include mb-4;
+.unk .dcf-form-group {
+  @include mb-5;
+
+	&>*:not(label):not(legend):not(:first-child) {
+		@include ml-4;
+	}
+
+	// no margin left when form elements are column-wise
+	&.dcf-flex-col {
+		&>*:not(label):not(legend):not(:first-child) {
+			@include ml-0;
+		}
+	}
 }
 
 
 // Form group and form with input group
-.example .dcf-form-group,
-.example .dcf-input-group-form {
+.unk .dcf-form-group,
+.unk .dcf-input-group-form {
   margin-top: -#{ms(-12)}em; // Apply negative margin-top to equalize label margin-top
 }
 
 
 // Label
-.example .dcf-label {
+.unk .dcf-label {
   margin-top: #{ms(-12)}em;
+}
+
+.unk .dcf-form-group[disabled] label {
+	cursor: not-allowed !important;
+	opacity: .7;
+}
+
+.unk .dcf-form-group input[disabled] ~ label {
+	cursor: not-allowed !important;
+	opacity: .7;
+}
+
+
+// Input
+.unk .dcf-form-group.dcf-d-flex input {
+	&:not([type="radio"]):not([type="select"]):not([type="checkbox"]):not([type="datetime-local"]):not([type="file"]) {
+		flex: 0.6;
+	}
+}
+
+.unk .dcf-form-group input ~ label {
+	@include ml-2;
 }
 
 
 // Input: Text
-.example .dcf-input-text {
+.unk .dcf-input-text, .unk .dcf-input-text-area {
   border: 1px solid $color-border;
   border-radius: $roundrect;
-  box-shadow: inset 0 1px 2px fade-out($color-border,1);
+  box-shadow: inset 0 1px 2px fade-out($color-border,0.5);
   @include pb-2;
   @include pl-3;
   @include pr-3;
@@ -41,199 +74,68 @@
 }
 
 
-.example .dcf-input-text:hover {
+.unk .dcf-input-text:hover, .unk .dcf-input-text-area:hover {
   border-color: $color-border-hover;
   box-shadow: inset 0 1px 2px fade-out($color-border,.5);
   transition: border-color $hover-on, box-shadow $hover-on;
 }
 
 
-.example .dcf-input-text:focus {
+.unk .dcf-input-text:focus, .unk .dcf-input-text-area:focus {
   border-color: $color-button;
   outline: none;
 }
 
-
 // Input: Control
-.example .dcf-input-control {
+.unk .dcf-input-control {
   @include mr-1;
 }
 
 
 // Input: File
-.example .dcf-input-file {
+.unk .dcf-input-file {
   @include mb-2;
   @include mt-2;
+	border-radius: $roundrect;
+	border: 1px solid;
+	border-color: $color-border;
 }
 
 
 // Required
-.example .dcf-required {
-  color: #d00;
+.unk .dcf-required {
+  color: $red;
   @include txt-xs;
-  font-style: italic;
-  @include pl-2;
+  @include pl-1;
+}
+
+// Input: Submit
+.unk .dcf-input-submit {
+	background-color: $gray-lightest;
+	border-color: $color-border;
+	text-transform: uppercase;
+	min-width: min-content;
+	max-width: 50vw;
+}
+
+
+// Input: Range
+.unk .dcf-input-range {
+
 }
 
 
 // Form Help
-.example .dcf-form-help {
+.unk .dcf-form-help {
   color: $color-light-text;
   @include txt-xs;
   @include mt-1;
 }
 
 
-
-
-// Uses Filament Group's select-css: https://github.com/filamentgroup/select-css
-
-// Container used for styling the custom select, the buttom class below adds the
-// bg gradient, corners, etc.
-.example .dcf-input-select {
-  display: table;
-  position: relative;
-  @include mt-1;
-
-  // These are the "theme" styles for our button applied via separate button class, style as you like
-  // Set the background fallback to solid #fff so Firefox renders the <option> list readably.
-	border: 1px solid $color-border;
-	@include rounded;
-// 	box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
-// 	box-shadow: 2px 2px 0 0 rgba(0,0,0,.1);
-  transition: border-color $hover-off;
-}
-
-// This is the native select, we're making everything but the text invisible so
-// we can see the button styles in the wrapper
-.example .dcf-input-select select {
-	@include rounded;
-  box-sizing: border-box;
-	color: $color-body;
-  font-family: inherit;
-	font-size: 1rem; // Font size must be 16px to prevent iOS page zoom on focus
-	@include lh-4;
-	margin: 0;
-	outline: none;
-  @include pb-2;
-  @include pl-3;
-  @include pr-4;
-  @include pt-2;
-  width: 100%;
-	// General select styles: change as needed
-// 	font-family: sans-serif;
-// 	font-weight: 700;
-// 	line-height: 1.5;
-}
-
-
-// Custom arrow sits on top of the select - could be an image, SVG, icon font,
-// etc. or the arrow could just baked into the bg image on the select.
-.example .dcf-input-select::after {
-	content: ' ';
-  display: none; // These hacks make the select behind the arrow clickable in some browsers
-	pointer-events: none; // These hacks make the select behind the arrow clickable in some browsers
-	position: absolute;
-	right: 1em;
-	top: 50%;
-	z-index: 2;
-}
-
-// Firefox <= 34 has a false positive on @supports( -moz-appearance: none )
-// @supports ( mask-type: alpha ) is Firefox 35+
-@supports (-webkit-appearance: none) or (appearance: none) or ((-moz-appearance: none) and (mask-type: alpha)) {
-
-	// Show custom arrow
-	.example .dcf-input-select::after {
-  	border-left: 4px solid transparent;
-  	border-right: 4px solid transparent;
-  	border-top: 8px solid $color-body;
-		display: block;
-    height: 0;
-  	margin-top: -4px;
-    width: 0;
-	}
-
-	// Remove select styling
-	.example .dcf-input-select select {
-    appearance: none;
-		// inside @supports so that iOS <= 8 display the native arrow
-    background: none; // Match-04
-		// inside @supports so that Android <= 4.3 display the native arrow
-		border: 1px solid transparent; // Match-05
-		padding-right: 3em; // Match-01
-	}
-
-	.example .dcf-input-select select:focus {
-		border-color: #aaa; // Match-03
-	}
-
-}
-
-// Hover style
-.example .dcf-input-select:hover {
-	border-color: $color-border-hover;
-  transition: border-color $hover-on;
-}
-
-// Focus style
-.example .dcf-input-select select:focus {
-	// It'd be nice to use -webkit-focus-ring-color here but it doesn't work on box-shadow
-	box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
-	box-shadow: 0 0 0 3px -moz-mac-focusring;
-	color: #222; // Match-02
-}
-
-@supports ( box-shadow: none ) {
-
-	.example .dcf-input-select select:focus {
-		outline: none;
-	}
-
-}
-
-// Set options to normal weight
-.example .dcf-input-select option {
-	font-weight: normal;
-}
-
-
-// IE 10/11+ - This hides native dropdown button arrow so it will have the custom appearance. Targeting media query hack via
-// http://browserhacks.com/#hack-28f493d247a12ab654f6c3637f6978d5 - looking for better ways to achieve this targeting
-// The second rule removes the odd blue bg color behind the text in the select button in IE 10/11 and sets the text color to match the
-// focus style's - fix via http://stackoverflow.com/questions/17553300/change-ie-background-color-on-unopened-focused-select-box
-
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-
-	.example .dcf-input-select select {
-    background: none; // Match-04
-		border: 1px solid transparent; // Match-05
-		padding-right: 3em; // Match-01
-	}
-
-	.example .dcf-input-select select::-ms-expand {
-		display: none;
-	}
-
-	.example .dcf-input-select select:focus {
-		border-color: #aaa; // Match-03
-	}
-
-	.example .dcf-input-select select:focus::-ms-value {
-		background-color: transparent;
-		color: #222; // Match-02
-	}
-
-	.example .dcf-input-select::after {
-		display: block;
-	}
-
-}
-
-
 // Inputs
-.example .dcf-label + .dcf-input-text,
-.example .dcf-label + .dcf-input-select,
-.example .dcf-label + .dcf-input-group {
+.unk .dcf-label + .dcf-input-text,
+.unk .dcf-label + .dcf-input-select,
+.unk .dcf-label + .dcf-input-group {
   margin-top: #{ms(-12)}em;
 }

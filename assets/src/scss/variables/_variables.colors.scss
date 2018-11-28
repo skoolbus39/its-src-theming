@@ -19,16 +19,17 @@ $color-brand-beta: #ce8901;
 // Assign colors to elements
 $white: #fff;
 $black: #231f20;
+$red: #b01212;
 
 $mix-white-black: mix($white, $black); // gray
 
-$gray-light: lighten($mix-white-black, 36%); // #dcdcdc
-$gray-lighter: lighten($mix-white-black, 43%); // #eee
-$gray-lightest: lighten($mix-white-black, 47%); // #f8f8f8
+$gray-light: lighten($mix-white-black, 10%);
+$gray-lighter: lighten($mix-white-black, 25%);
+$gray-lightest: lighten($mix-white-black, 33%);
 
-$gray-dark: darken($mix-white-black, 10%); // #676767
-$gray-darker: darken($mix-white-black, 24%); // #434343
-$gray-darkest: darken($mix-white-black, 32%); // #2e2e2e
+$gray-dark: darken($mix-white-black, 10%);
+$gray-darker: darken($mix-white-black, 24%);
+$gray-darkest: darken($mix-white-black, 32%);
 
 
 // Body background color (usually white, off-white, or very light gray)
@@ -73,7 +74,7 @@ $color-button-active: $color-link-active;
 
 // !Borders
 $color-border: $gray-lighter;
-$color-border-hover: $gray-lighter;
+$color-border-hover: $gray-light;
 
 
 // !Marks (Highlights) Background Color

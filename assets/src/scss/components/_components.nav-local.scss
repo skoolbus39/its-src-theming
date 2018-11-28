@@ -10,11 +10,15 @@
       @include mb-0;
       @include pl-0;
       list-style: none;
-      @include font-cn;
+
+      & > * {
+        @include font-cn;
+      }
     }
 
     .dcf-nav-menu li a {
       color: $color-link;
+      font-family: inherit;
 
       &:active {
         color: $color-link-active;

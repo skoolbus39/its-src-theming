@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="/css/site.combined.min.css">
         <script src="https://fast.fonts.net/jsapi/a1632ffd-a0ce-4189-8ed1-72179838887d.js" type="text/javascript"></script>
         <link id="MonoTypeFontApiFontTracker" type="text/css" rel="stylesheet" href="https://fast.fonts.net/t/1.css?apiType=js&amp;projectid=a1632ffd-a0ce-4189-8ed1-72179838887d">
+        <!--Flatpickr is included in DCF under assets/dist/js/vendor-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     </head>
     <body class="unk">
         <header class="dcf-header">
@@ -32,9 +34,8 @@
                         <input name="ie" type="hidden" value="UTF-8">
                         <label class="dcf-sr-only" for="searchTxt">Enter search terms</label>
                         <input class="dcf-search-input dcf-pl-2" id="searchTxt" name="q" placeholder="search unk.edu"
-                               temp="search unk.edu"
                                type="search">
-                        <button type="submit" alt="search" id="searchBtn" name="search" aria-label="Perform search"
+                        <button type="submit" title="search" id="searchBtn" name="search" aria-label="Perform search"
                                 class="dcf-search-toggle" >
                             <img src="https://www.unk.edu/_files/redesign/images/search-btn.png"
                                  alt="image of a magnifying glass">
@@ -127,8 +128,176 @@
                 </nav>
             </div>
         </header>
-        <main>
-            <h1>Hello World</h1>
+        <main class="dcf-main" tabindex="-1">
+            <div class="dcf-main-content dcf-wrapper">
+                <header>
+                    <h1>University of Nebraska High School</h1>
+                </header>
+                <form action="" method="post" class="dcf-form">
+                    <fieldset>
+                        <legend class="dcf-legend">Billing Details</legend>
+
+                        <div class="dcf-d-flex dcf-form-group">
+                            <label for="full-name-input" id="full-name-label" class="dcf-label">Name: </label>
+                            <input type="text" name="name" value="" placeholder="Enter your Name"
+                                   id="full-name-input"
+                                   aria-placeholder="Explicit Labelling"
+                                   aria-labelledby="full-name-label"
+                                   aria-describedby="full-name-description"
+                                   class="dcf-input-text">
+                            <span class="dcf-sr-only" id="full-name-description">
+                                This is an example description of an input field
+                            </span>
+                        </div>
+
+                        <div class="dcf-d-flex dcf-form-group" disabled>
+                            <label for="full-name-input" id="email-label" class="dcf-label">Email: </label>
+                            <input type="email" name="name" value="" tabindex="1" placeholder="email@emailaddress.com"
+                                   id="email-input"
+                                   aria-placeholder="Explicit Labelling"
+                                   aria-labelledby="email-label"
+                                   aria-describedby="email-description"
+                                   class="dcf-input-text"
+                                    disabled>
+                            <span class="dcf-sr-only" id="email-description">
+                                This is an example description of an email input field
+                            </span>
+                        </div>
+
+                        <div class="dcf-d-flex dcf-form-group dcf-input-group-form">
+                            <label for="position" id="position-level" class="dcf-label">I identify myself as a UNK:<sup class="dcf-required">*</sup>
+                            </label>
+                            <fieldset id="Position" name="Position" aria-labelledby="position-level"
+                                      class="dcf-input-radio dcf-d-flex dcf-flex-col">
+                                <legend class="dcf-legend">Position</legend>
+                                <div class="dcf-styled-radio">
+                                    <input id="student_Position" name="Position" type="radio" value="student">
+                                    <label for="student_Position" class="dcf-label">student</label>
+                                </div>
+                                <div class="dcf-styled-radio">
+                                    <input id="faculty_member_Position" name="Position" type="radio"
+                                           value="faculty member">
+                                    <label for="faculty_member_Position"  class="dcf-label">faculty member</label>
+                                </div>
+                                <div class="dcf-styled-radio">
+                                    <input id="administrator_Position" name="Position" type="radio" value="administrator">
+                                    <label for="administrator_Position" class="dcf-label">administrator</label>
+                                </div>
+                                <div class="dcf-styled-radio">
+                                    <input id="staff_member_Position" name="Position" type="radio"
+                                           value="staff member">
+                                    <label for="staff_member_Position" class="dcf-label">staff member</label>
+                                </div>
+                                <div class="dcf-styled-radio">
+                                    <input id="other_Position" name="Position" type="radio" value="other">
+                                    <label for="other_Position">other</label>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <div class="dcf-d-flex dcf-flex-col dcf-form-group">
+                            <label for="comments">Please provide your questions or comments in the area below: <sup
+                                    class="dcf-required">*</sup></label>
+                            <textarea cols="25" id="comments" name ="comments" rows="5" class="dcf-input-text-area"></textarea>
+                        </div>
+
+                        <div class="dcf-d-flex dcf-form-group">
+                            <label for="Student_Profile" id="Student_Profile_Label" class="dcf-label">Students' Grade
+                                at Time of
+                                Visit:<sup
+                                    class="dcf-required">
+                                *</sup></label>
+                            <div class="dcf-input-select">
+                                <select id="Student_Profile" name="Student_Profile"
+                                        aria-labelledby="Student_Profile_Label" class="dcf-input-select">
+                                    <option value="12th Grade (Seniors)">12th Grade (Seniors)</option>
+                                    <option value="11th Grade (Juniors)">11th Grade (Juniors)</option>
+                                    <option value="10th Grade (Sophomores)">10th Grade (Sophomores)</option>
+                                    <option value="9th Grade (Freshmen)">9th Grade (Freshmen)</option>
+                                    <option value="8th Grade">8th Grade</option>
+                                    <option value="Combination of Grades">Combination of Grades</option>
+                                    <option value="Current College Students">Current College Students</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <fieldset class="dcf-d-flex dcf-flex-col dcf-form-group">
+                            <legend class="dcf-legend">Styled Checkboxes</legend>
+                            <div class="dcf-styled-checkbox">
+                                <input id="elements-form-checkboxA" type="checkbox" value="0"
+                                       aria-labelledby="elements-form-checkboxA-label">
+                                <label for="elements-form-checkboxA"
+                                       id="elements-form-checkboxA-label"
+                                       class="dcf-label">
+                                    Checkbox A
+                                </label>
+                            </div>
+                            <div class="dcf-styled-checkbox">
+                                <input id="elements-form-checkboxB" type="checkbox" value="1"
+                                       aria-labelledby="elements-form-checkboxB-label" disabled>
+                                <label for="elements-form-checkboxB"
+                                       id="elements-form-checkboxB-label"
+                                       class="dcf-label">
+                                    Checkbox B
+                                </label>
+                            </div>
+                            <div class="dcf-styled-checkbox">
+                                <input id="elements-form-checkboxC" type="checkbox" value="2"
+                                       aria-labelledby="elements-form-checkboxC-label">
+                                <label for="elements-form-checkboxC"
+                                       id="elements-form-checkboxC-label"
+                                       class="dcf-label">
+                                    Checkbox C
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <div class="dcf-d-flex dcf-form-group">
+                            <label for="example-elements-form-datetime-flatpickr">Date/time: </label>
+                            <input id="example-elements-form-datetime-flatpickr" data-widget="flatpickr" type="text" class="flatpickr"
+                                       placeholder="Select Date & Time.."
+                                       readonly="readonly">
+                        </div>
+
+                        <div class="dcf-d-flex dcf-form-group">
+                            <label for="elements-form-input-file"
+                                   id="elements-form-input-file-label"
+                                   class="dcf-label">
+                                File input
+                            </label>
+                            <input id="elements-form-input-file" type="file"
+                                   aria-labelledby="elements-form-input-file-label" class="dcf-input-file">
+                        </div>
+
+                        <div class="dcf-d-flex dcf-form-group">
+                            <label for="elements-form-input-range"
+                                   id="elements-form-input-range-label"
+                                   class="dcf-label">
+                                Range Slider
+                            </label>
+                            <input id="elements-form-input-range" type="range"
+                                   aria-labelledby="elements-form-input-range-label" class="dcf-input-range">
+                        </div>
+
+                        <div class="dcf-d-flex dcf-form-group">
+                            <label for="tasks_comp">
+                                Tasks Completed:</label>
+                            <progress class="dcf-input-progress" value="50" max="100" id="tasks_comp"></progress>
+                        </div>
+
+                        <div role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                             aria-valuetext="Step 2: Copying files... " aria-valuemax="100"
+                             class="dcf-form-group dcf-progress-bar dcf-d-flex">
+                            <div class="progress-indicator"></div>
+                            <span class="progress-label dcf-as-center">Step 2: Copying files...</span>
+                        </div>
+
+                        <input type="submit" value="Submit" class="dcf-btn dcf-btn-primary dcf-input-submit">
+                    </fieldset>
+                </form>
+            </div>
         </main>
         <footer class="dcf-footer">
             <div class="dcf-footer-global dcf-wrapper">
@@ -208,7 +377,7 @@
                     </div>
                     <div class="social">
                         <div class="svg-container">
-                            <img class="univ-logo" src="img/global-logo1.svg" alt="">
+                            <img class="univ-logo" src="img/global-logo1.svg" alt="University of Nebraska logo">
                             <!--<svg version="1.1" xmlns="http://www.w3.org/2000/svg"-->
                              <!--preserveAspectRatio="xMaxYMax meet" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"-->
                              <!--y="0px" viewBox="0 0 79.3 20.8" xml:space="preserve">-->
@@ -284,6 +453,8 @@
             </div>
         </footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+        <!--Flatpickr is included in DCF under assets/dist/js/vendor-->
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
         <script src="js/script.min.js"></script>
     </body>
 
