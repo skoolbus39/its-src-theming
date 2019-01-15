@@ -1,3 +1,5 @@
+const path = require('path');
+
 // package vars
 let pkg = require('./package.json');
 
@@ -48,9 +50,7 @@ gulp.task('screenScss', () => {
     .pipe($.sassGlob())
     .pipe($.sourcemaps.init({ loadMaps: true }))
     .pipe($.sass({
-      includePaths: [
-        `${__dirname }/node_modules/modularscale-sass/stylesheets`
-      ]
+      includePaths: [path.dirname(require.resolve('modularscale-sass'))]
     })
       .on('error', $.sass.logError))
     .pipe($.cached('sass_compile'))
@@ -98,8 +98,10 @@ gulp.task('printScss', () => {
     .pipe(customPlumber('Error Running Sass'))
     .pipe($.sassGlob())
     .pipe($.sourcemaps.init({ loadMaps: true }))
-    .pipe($.sass()
-      .on('error', $.sass.logError))
+		.pipe($.sass({
+			includePaths: [path.dirname(require.resolve('modularscale-sass'))]
+		})
+				.on('error', $.sass.logError))
     .pipe($.cached('sass_compile'))
     .pipe($.autoprefixer())
     .pipe($.sourcemaps.write('./'))

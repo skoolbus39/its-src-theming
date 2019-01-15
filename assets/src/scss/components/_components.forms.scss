@@ -94,8 +94,6 @@
 
 // Input: File
 .unk .dcf-input-file {
-  @include mb-2;
-  @include mt-2;
 	border-radius: $roundrect;
 	border: 1px solid;
 	border-color: $color-border;
