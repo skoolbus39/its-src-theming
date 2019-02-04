@@ -10,7 +10,6 @@
     * header & footer
     
 * UNK pages that have forms:
-    * https://www.unk.edu/academic_affairs/general_studies/comments.php
     * https://www.unk.edu/admissions/group-visit-request.php
     
 

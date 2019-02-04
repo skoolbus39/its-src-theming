@@ -1,461 +1,465 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>ITS-SRC UNK Theming</title>
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta content="width=device-width, initial-scale=1, maximum-scale=2" name="viewport">
-        <link rel="stylesheet" href="/css/site.combined.min.css">
-        <script src="https://fast.fonts.net/jsapi/a1632ffd-a0ce-4189-8ed1-72179838887d.js" type="text/javascript"></script>
-        <link id="MonoTypeFontApiFontTracker" type="text/css" rel="stylesheet" href="https://fast.fonts.net/t/1.css?apiType=js&amp;projectid=a1632ffd-a0ce-4189-8ed1-72179838887d">
-        <!--Flatpickr is included in DCF under assets/dist/js/vendor-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-    </head>
-    <body class="unk">
-        <header class="dcf-header">
-            <!--desktop-wrapper gets display grid on desktop width-->
-            <div class="dcf-wrapper dcf-header-global">
-                <!--mobile logo-->
-                <a href="http://www.unk.edu/index.php"
-                   class="dcf-institution-title dcf-header-global-item dcf-pt-4 dcf-mb-3 logo-mobile">
-                    <img alt="UNK - University of Nebraska at Kearney" src="https://www.unk.edu/_files/redesign/images/UNK-00026A.png">
-                </a>
-                <!--desktop logo goes here-->
-                <a href="http://www.unk.edu/index.php" title="UNK Home"
-                   class="dcf-logo-lockup dcf-header-global-item logo-desktop"  >
-                    <img alt="UNK - University of Nebraska at Kearney" src="https://www.unk.edu/_files/redesign/images/logo.png">
-                </a>
-                <!--search-nav-togl-wrapper goes here-->
-                <div class="search-nav-togl-wrapper  dcf-header-global-item dcf-mb-3">
-                    <form action="https://www.unk.edu/search.php" role="search"
-                          class="dcf-header-global-item dcf-search dcf-d-flex">
-                        <input name="cx" type="hidden" value="013796191248425576156:cfp8wlcu7ic">
-                        <input name="cof" type="hidden" value="FORID:11">
-                        <input name="ie" type="hidden" value="UTF-8">
-                        <label class="dcf-sr-only" for="searchTxt">Enter search terms</label>
-                        <input class="dcf-search-input dcf-pl-2" id="searchTxt" name="q" placeholder="search unk.edu"
-                               type="search">
-                        <button type="submit" title="search" id="searchBtn" name="search" aria-label="Perform search"
-                                class="dcf-search-toggle" >
-                            <img src="https://www.unk.edu/_files/redesign/images/search-btn.png"
-                                 alt="image of a magnifying glass">
-                        </button>
-                    </form>
-                    <!--Mobile search toggle-->
-                    <button class="menu-button dcf-ml-3 dcf-nav-menu-toggle-btn" aria-haspopup="menu">
-                        <span class="dcf-sr-only">Show Navigation</span>
-                    </button>
-                </div>
-                <!--secondary nav in dcf-nav-global goes here-->
-                <nav aria-label="Secondary Navigation" role="navigation" class="dcf-nav-global  dcf-header-global-item">
-                    <ul class="dcf-nav-menu">
-                        <li><a href="http://www.unk.edu/student_affairs/parents/index.php" title="General Parent Information">Parents</a></li>
-                        <li><a href="http://www.unk.edu/faculty_staff/index.php" title="Information and Resources for UNK Faculty and Staff">Faculty &amp; Staff</a></li>
-                        <li><a href="http://www.unk.edu/alumni.php" title="Information and Resources for UNK Alumni">Alumni</a></li>
-                        <li><a href="http://www.unk.edu/athletics.php" title="Information and Resources for UNK Athletics">Athletics</a></li>
-                    </ul>
-                </nav>
+<head>
+    <meta charset="UTF-8">
+    <title>ITS-SRC UNK Theming</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=2" name="viewport">
+    <link rel="stylesheet" href="/css/site.combined.min.css">
+    <script src="https://fast.fonts.net/jsapi/a1632ffd-a0ce-4189-8ed1-72179838887d.js" type="text/javascript"></script>
+    <link id="MonoTypeFontApiFontTracker" type="text/css" rel="stylesheet" href="https://fast.fonts.net/t/1.css?apiType=js&amp;projectid=a1632ffd-a0ce-4189-8ed1-72179838887d">
+    <!--Flatpickr is included in DCF under assets/dist/js/vendor-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body class="unk">
+<header class="dcf-header">
+    <!--desktop-wrapper gets display grid on desktop width-->
+    <div class="dcf-wrapper dcf-header-global">
+        <!--mobile logo-->
+        <a href="http://www.unk.edu/index.php"
+           class="dcf-institution-title dcf-header-global-item dcf-pt-4 dcf-mb-3 logo-mobile">
+            <img alt="UNK - University of Nebraska at Kearney" src="https://www.unk.edu/_files/redesign/images/UNK-00026A.png">
+        </a>
+        <!--desktop logo goes here-->
+        <a href="http://www.unk.edu/index.php" title="UNK Home"
+           class="dcf-logo-lockup dcf-header-global-item logo-desktop"  >
+            <img alt="UNK - University of Nebraska at Kearney" src="https://www.unk.edu/_files/redesign/images/logo.png">
+        </a>
+        <!--search-nav-togl-wrapper goes here-->
+        <div class="search-nav-togl-wrapper  dcf-header-global-item dcf-mb-3">
+            <form action="https://www.unk.edu/search.php" role="search"
+                  class="dcf-header-global-item dcf-search dcf-d-flex">
+                <input name="cx" type="hidden" value="013796191248425576156:cfp8wlcu7ic">
+                <input name="cof" type="hidden" value="FORID:11">
+                <input name="ie" type="hidden" value="UTF-8">
+                <label class="dcf-sr-only" for="searchTxt">Enter search terms</label>
+                <input class="dcf-search-input dcf-pl-2" id="searchTxt" name="q" placeholder="search unk.edu"
+                       type="search">
+                <button type="submit" title="search" id="searchBtn" name="search" aria-label="Perform search"
+                        class="dcf-search-toggle" >
+                    <img src="https://www.unk.edu/_files/redesign/images/search-btn.png"
+                         alt="image of a magnifying glass">
+                </button>
+            </form>
+            <!--Mobile search toggle-->
+            <button class="menu-button dcf-ml-3 dcf-nav-menu-toggle-btn" aria-haspopup="menu">
+                <span class="dcf-sr-only">Show Navigation</span>
+            </button>
+        </div>
+        <!--secondary nav in dcf-nav-global goes here-->
+        <nav aria-label="Secondary Navigation" role="navigation" class="dcf-nav-global  dcf-header-global-item">
+            <ul class="dcf-nav-menu">
+                <li><a href="http://www.unk.edu/student_affairs/parents/index.php" title="General Parent Information">Parents</a></li>
+                <li><a href="http://www.unk.edu/faculty_staff/index.php" title="Information and Resources for UNK Faculty and Staff">Faculty &amp; Staff</a></li>
+                <li><a href="http://www.unk.edu/alumni.php" title="Information and Resources for UNK Alumni">Alumni</a></li>
+                <li><a href="http://www.unk.edu/athletics.php" title="Information and Resources for UNK Athletics">Athletics</a></li>
+            </ul>
+        </nav>
 
-                <!--primary nav in dcf-nav-local goes here-->
-                <nav aria-label="Primary Navigation" role="navigation" class="dcf-nav-local  dcf-header-global-item">
-                    <ul class="flexnav dcf-nav-menu" data-breakpoint="731">
-                        <li class="menu-first"><a href="http://www.unk.edu/about/index.php" title="Information about UNK's history, campus, and community">About UNK</a>
-                            <ul class="dcf-nav-menu-child">
-                                <li><a href="http://www.unk.edu/about/chancellor_welcome.php" title="Welcome Message from the Chancellor of UNK">Chancellor's Welcome</a></li>
-                                <li><a href="http://www.unk.edu/about/history.php" title="University of Nebraska Kearney History">History</a></li>
-                                <li><a href="http://www.unk.edu/#virtualtour" rel="noopener" target="_blank" title="Virtual Walking Tour of the UNK Campus">Virtual Walking Tour</a></li>
-                                <li><a href="http://www.unk.edu/about/community-outreach.php">Kearney Community</a></li>
-                                <li><a href="http://www.unk.edu/campus-map/" title="Interactive Map of the UNK Campus">Campus Map</a></li>
-                                <li><a href="http://www.unk.edu/offices/human_resources/employment/employment_opportunities.php">Work for UNK</a></li>
-                                <li><a href="http://www.unk.edu/factbook/index.php">Factbook</a></li>
-                                <li><a href="http://www.unk.edu/about/fastfacts/index.php" title="A to Z list of department websites">A to Z Websites</a></li>
-                                <li><a href="http://www.unk.edu/about/administration/index.php">Administration</a></li>
-                                <li><a href="http://www.unk.edu/directory" title="Faculty/Staff Directory">Directory</a></li>
-                                <li><a href="http://www.unk.edu/about/fastfacts/accreditation-history.php">Accreditation</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="http://www.unk.edu/academics/index.php" title="Academic Colleges, Departments and Resources">Academics</a>
-                            <ul class="dcf-nav-menu-child">
-                                <li><a href="http://www.unk.edu/academics/arts-and-sciences/index.php" title="College of Natural and Social Sciences">Arts &amp; Sciences</a></li>
-                                <li><a href="http://www.unk.edu/academics/bt/index.php" title="College of Business &amp; Technology">Business &amp; Technology</a></li>
-                                <li><a href="http://www.unk.edu/academics/coe/index.php" title="College of Education">Education</a></li>
-                                <li><a href="http://www.unk.edu/academics/gradstudies/index.php">Graduate Studies</a></li>
-                                <li><a href="http://www.unk.edu/academics/research/index.php">Research</a></li>
-                                <li><a href="http://library.unk.edu">Library</a></li>
-                                <li><a href="http://www.unk.edu/international/index.php">International Education</a></li>
-                                <li><a href="http://unk.edu/academics/ecampus/index.php">eCampus Online Education</a></li>
-                                <li><a href="http://www.unk.edu/academics/a-to-z-departments.php" title="A to Z list of academic departments">Academic Departments</a></li>
-                                <li><a href="http://www.unk.edu/academic_affairs/index.php">Academic Affairs</a></li>
-                                <li><a href="http://www.unk.edu/academics/list-of-majors.php">List of Majors</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="http://www.unk.edu/admissions/index.php">Admissions</a>
-                            <ul class="dcf-nav-menu-child">
-                                <li><a href="http://www.unk.edu/admissions/undergraduate/" title="Undegraduate Admissions">Undergraduate</a></li>
-                                <li><a href="http://www.unk.edu/academics/gradstudies/admissions/index.php" title="Graduate Admissions">Graduate</a></li>
-                                <li><a href="http://www.unk.edu/international/international-admissions/index.php" title="International Admissions">International</a></li>
-                                <li><a href="http://www.unk.edu/admissions/transfer_information.php" title="Transfer Admissions">Transfer</a></li>
-                                <li><a href="http://unk.edu/academics/ecampus/index.php">eCampus - Online Education</a></li>
-                                <li><a href="http://www.unk.edu/admissions/apply.php" title="Apply to UNK">Apply</a></li>
-                                <li><a href="http://www.unk.edu/costs.php" title="Cost">Cost</a></li>
-                                <li><a href="http://www.unk.edu/scholarships.php">Scholarships</a></li>
-                                <li><a href="http://www.unk.edu/admissions/info-request.php">Request Information</a></li>
-                                <li><a href="http://visit.unk.edu">Schedule a Visit</a></li>
-                                <li><a href="http://www.unk.edu/#virtualtour">Virtual Tour</a></li>
-                                <li><a href="http://www.unk.edu/offices/financial_aid/index.php">Financial Aid</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-last"><a href="http://www.unk.edu/student_resources/index.php" title="General UNK student resources">Students</a>
-                            <ul class="dcf-nav-menu-child">
-                                <li><a href="http://www.unk.edu/offices/reslife/index.php" title="Housing">Housing</a></li>
-                                <li><a href="http://www.unk.edu/diningservices">Dining</a></li>
-                                <li><a href="http://www.unk.edu/offices/student_life/engage.php" title="Student Organizations">Organizations</a></li>
-                                <li><a href="http://www.unk.edu/offices/student_life/greek_affairs/index.php">Fraternity &amp; Sorority Life</a></li>
-                                <li><a href="http://www.unk.edu/offices/financial_aid/index.php">Financial Aid</a></li>
-                                <li><a href="http://www.unk.edu/offices/acs/index.php">Academic &amp; Career Services</a></li>
-                                <li><a href="http://www.unk.edu/offices/registrar/index.php">Student Records &amp; Registration</a></li>
-                                <li><a href="http://www.unk.edu/offices/its/index.php" title="Information Technology Services">IT Services</a></li>
-                                <li><a href="http://www.unk.edu/offices/counseling_healthcare/index.php">Student Health &amp; Counseling</a></li>
-                                <li><a href="http://www.unk.edu/wellness.php">Recreation &amp; Wellness</a></li>
-                                <li><a href="http://www.unk.edu/about/safety-information.php">Campus Safety</a></li>
-                            </ul>
-                        </li>
-                        <li class="mobile-only"><a href="http://www.unk.edu/student_affairs/parents/index.php" title="General Parent Information">Parents</a></li>
-                        <li class="mobile-only"><a href="http://www.unk.edu/faculty_staff/index.php" title="Information and Resources for Faculty and Staff">Faculty &amp; Staff</a></li>
-                        <li class="mobile-only"><a href="http://www.unk.edu/alumni.php" title="Information and Resources for UNK Alumni">Alumni</a></li>
-                        <li class="mobile-only"><a href="http://www.unk.edu/athletics.php" title="Information and Resources for UNK Athletics">Athletics</a></li>
+        <!--primary nav in dcf-nav-local goes here-->
+        <nav aria-label="Primary Navigation" role="navigation" class="dcf-nav-local  dcf-header-global-item">
+            <ul class="flexnav dcf-nav-menu" data-breakpoint="731">
+                <li class="menu-first"><a href="http://www.unk.edu/about/index.php" title="Information about UNK's history, campus, and community">About UNK</a>
+                    <ul class="dcf-nav-menu-child">
+                        <li><a href="http://www.unk.edu/about/chancellor_welcome.php" title="Welcome Message from the Chancellor of UNK">Chancellor's Welcome</a></li>
+                        <li><a href="http://www.unk.edu/about/history.php" title="University of Nebraska Kearney History">History</a></li>
+                        <li><a href="http://www.unk.edu/#virtualtour" rel="noopener" target="_blank" title="Virtual Walking Tour of the UNK Campus">Virtual Walking Tour</a></li>
+                        <li><a href="http://www.unk.edu/about/community-outreach.php">Kearney Community</a></li>
+                        <li><a href="http://www.unk.edu/campus-map/" title="Interactive Map of the UNK Campus">Campus Map</a></li>
+                        <li><a href="http://www.unk.edu/offices/human_resources/employment/employment_opportunities.php">Work for UNK</a></li>
+                        <li><a href="http://www.unk.edu/factbook/index.php">Factbook</a></li>
+                        <li><a href="http://www.unk.edu/about/fastfacts/index.php" title="A to Z list of department websites">A to Z Websites</a></li>
+                        <li><a href="http://www.unk.edu/about/administration/index.php">Administration</a></li>
+                        <li><a href="http://www.unk.edu/directory" title="Faculty/Staff Directory">Directory</a></li>
+                        <li><a href="http://www.unk.edu/about/fastfacts/accreditation-history.php">Accreditation</a></li>
                     </ul>
-                </nav>
-            </div>
+                </li>
+                <li><a href="http://www.unk.edu/academics/index.php" title="Academic Colleges, Departments and Resources">Academics</a>
+                    <ul class="dcf-nav-menu-child">
+                        <li><a href="http://www.unk.edu/academics/arts-and-sciences/index.php" title="College of Natural and Social Sciences">Arts &amp; Sciences</a></li>
+                        <li><a href="http://www.unk.edu/academics/bt/index.php" title="College of Business &amp; Technology">Business &amp; Technology</a></li>
+                        <li><a href="http://www.unk.edu/academics/coe/index.php" title="College of Education">Education</a></li>
+                        <li><a href="http://www.unk.edu/academics/gradstudies/index.php">Graduate Studies</a></li>
+                        <li><a href="http://www.unk.edu/academics/research/index.php">Research</a></li>
+                        <li><a href="http://library.unk.edu">Library</a></li>
+                        <li><a href="http://www.unk.edu/international/index.php">International Education</a></li>
+                        <li><a href="http://unk.edu/academics/ecampus/index.php">eCampus Online Education</a></li>
+                        <li><a href="http://www.unk.edu/academics/a-to-z-departments.php" title="A to Z list of academic departments">Academic Departments</a></li>
+                        <li><a href="http://www.unk.edu/academic_affairs/index.php">Academic Affairs</a></li>
+                        <li><a href="http://www.unk.edu/academics/list-of-majors.php">List of Majors</a></li>
+                    </ul>
+                </li>
+                <li><a href="http://www.unk.edu/admissions/index.php">Admissions</a>
+                    <ul class="dcf-nav-menu-child">
+                        <li><a href="http://www.unk.edu/admissions/undergraduate/" title="Undegraduate Admissions">Undergraduate</a></li>
+                        <li><a href="http://www.unk.edu/academics/gradstudies/admissions/index.php" title="Graduate Admissions">Graduate</a></li>
+                        <li><a href="http://www.unk.edu/international/international-admissions/index.php" title="International Admissions">International</a></li>
+                        <li><a href="http://www.unk.edu/admissions/transfer_information.php" title="Transfer Admissions">Transfer</a></li>
+                        <li><a href="http://unk.edu/academics/ecampus/index.php">eCampus - Online Education</a></li>
+                        <li><a href="http://www.unk.edu/admissions/apply.php" title="Apply to UNK">Apply</a></li>
+                        <li><a href="http://www.unk.edu/costs.php" title="Cost">Cost</a></li>
+                        <li><a href="http://www.unk.edu/scholarships.php">Scholarships</a></li>
+                        <li><a href="http://www.unk.edu/admissions/info-request.php">Request Information</a></li>
+                        <li><a href="http://visit.unk.edu">Schedule a Visit</a></li>
+                        <li><a href="http://www.unk.edu/#virtualtour">Virtual Tour</a></li>
+                        <li><a href="http://www.unk.edu/offices/financial_aid/index.php">Financial Aid</a></li>
+                    </ul>
+                </li>
+                <li class="menu-last"><a href="http://www.unk.edu/student_resources/index.php" title="General UNK student resources">Students</a>
+                    <ul class="dcf-nav-menu-child">
+                        <li><a href="http://www.unk.edu/offices/reslife/index.php" title="Housing">Housing</a></li>
+                        <li><a href="http://www.unk.edu/diningservices">Dining</a></li>
+                        <li><a href="http://www.unk.edu/offices/student_life/engage.php" title="Student Organizations">Organizations</a></li>
+                        <li><a href="http://www.unk.edu/offices/student_life/greek_affairs/index.php">Fraternity &amp; Sorority Life</a></li>
+                        <li><a href="http://www.unk.edu/offices/financial_aid/index.php">Financial Aid</a></li>
+                        <li><a href="http://www.unk.edu/offices/acs/index.php">Academic &amp; Career Services</a></li>
+                        <li><a href="http://www.unk.edu/offices/registrar/index.php">Student Records &amp; Registration</a></li>
+                        <li><a href="http://www.unk.edu/offices/its/index.php" title="Information Technology Services">IT Services</a></li>
+                        <li><a href="http://www.unk.edu/offices/counseling_healthcare/index.php">Student Health &amp; Counseling</a></li>
+                        <li><a href="http://www.unk.edu/wellness.php">Recreation &amp; Wellness</a></li>
+                        <li><a href="http://www.unk.edu/about/safety-information.php">Campus Safety</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-only"><a href="http://www.unk.edu/student_affairs/parents/index.php" title="General Parent Information">Parents</a></li>
+                <li class="mobile-only"><a href="http://www.unk.edu/faculty_staff/index.php" title="Information and Resources for Faculty and Staff">Faculty &amp; Staff</a></li>
+                <li class="mobile-only"><a href="http://www.unk.edu/alumni.php" title="Information and Resources for UNK Alumni">Alumni</a></li>
+                <li class="mobile-only"><a href="http://www.unk.edu/athletics.php" title="Information and Resources for UNK Athletics">Athletics</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="dcf-main" tabindex="-1">
+    <div class="dcf-main-content dcf-wrapper">
+        <header>
+            <h1 class="dcf-mt-5">University of Nebraska High School</h1>
         </header>
-        <main class="dcf-main" tabindex="-1">
-            <div class="dcf-main-content dcf-wrapper">
-                <header>
-                    <h1>University of Nebraska High School</h1>
-                </header>
-                <form action="" method="post" class="dcf-form">
-                    <fieldset>
-                        <legend class="dcf-legend">Billing Details</legend>
+        <form action="" method="post" class="dcf-form dcf-mb-8">
+            <fieldset>
+                <legend class="dcf-legend">Billing Details</legend>
 
-                        <div class="dcf-d-flex dcf-form-group">
-                            <label for="full-name-input" id="full-name-label" class="dcf-label">Name: </label>
-                            <input type="text" name="name" value="" placeholder="Enter your Name"
-                                   id="full-name-input"
-                                   aria-placeholder="Explicit Labelling"
-                                   aria-labelledby="full-name-label"
-                                   aria-describedby="full-name-description"
-                                   class="dcf-input-text">
-                            <span class="dcf-sr-only" id="full-name-description">
+                <div class="dcf-d-flex dcf-form-group dcf-input-group dcf-ai-baseline">
+                    <label for="full-name-input" id="full-name-label" class="dcf-label">Name: </label>
+                    <input type="text" name="name" value="" placeholder="Enter your Name"
+                           id="full-name-input"
+                           aria-placeholder="Explicit Labelling"
+                           aria-labelledby="full-name-label"
+                           aria-describedby="full-name-description"
+                           class="dcf-input-text">
+                    <span class="dcf-sr-only" id="full-name-description">
                                 This is an example description of an input field
                             </span>
-                        </div>
+                </div>
 
-                        <div class="dcf-d-flex dcf-form-group" disabled>
-                            <label for="full-name-input" id="email-label" class="dcf-label">Email: </label>
-                            <input type="email" name="name" value="" tabindex="1" placeholder="email@emailaddress.com"
-                                   id="email-input"
-                                   aria-placeholder="email@emailaddress.com"
-                                   aria-labelledby="email-label"
-                                   aria-describedby="email-description"
-                                   class="dcf-input-text"
-                                    disabled>
-                            <span class="dcf-sr-only" id="email-description">
+                <div class="dcf-d-flex dcf-form-group dcf-input-group dcf-ai-baseline" disabled>
+                    <label for="full-name-input" id="email-label" class="dcf-label">Email: </label>
+                    <input type="email" name="name" value="" tabindex="1" placeholder="email@emailaddress.com"
+                           id="email-input"
+                           aria-placeholder="email@emailaddress.com"
+                           aria-labelledby="email-label"
+                           aria-describedby="email-description"
+                           class="dcf-input-text"
+                           disabled>
+                    <span class="dcf-sr-only" id="email-description">
                                 This is an example description of an email input field
                             </span>
+                </div>
+
+                <div class="dcf-d-flex dcf-form-group dcf-input-group-form dcf-ai-baseline">
+                    <label for="position" id="position-level">I identify myself as a UNK:<sup class="dcf-required">*</sup>
+                    </label>
+                    <fieldset id="Position" name="Position" aria-labelledby="position-level"
+                              class="dcf-d-flex dcf-flex-col">
+                        <legend class="dcf-legend">Position</legend>
+                        <div class="dcf-input-radio">
+                            <input id="student_Position" name="Position" type="radio" value="student">
+                            <label for="student_Position">student</label>
                         </div>
-
-                        <div class="dcf-d-flex dcf-form-group dcf-input-group-form">
-                            <label for="position" id="position-level" class="dcf-label">I identify myself as a UNK:<sup class="dcf-required">*</sup>
-                            </label>
-                            <fieldset id="Position" name="Position" aria-labelledby="position-level"
-                                      class="dcf-d-flex dcf-flex-col">
-                                <legend class="dcf-legend">Position</legend>
-                                <div class="dcf-styled-radio">
-                                    <input id="student_Position" name="Position" type="radio" value="student">
-                                    <label for="student_Position" class="dcf-label">student</label>
-                                </div>
-                                <div class="dcf-styled-radio">
-                                    <input id="faculty_member_Position" name="Position" type="radio"
-                                           value="faculty member">
-                                    <label for="faculty_member_Position"  class="dcf-label">faculty member</label>
-                                </div>
-                                <div class="dcf-styled-radio">
-                                    <input id="administrator_Position" name="Position" type="radio" value="administrator">
-                                    <label for="administrator_Position" class="dcf-label">administrator</label>
-                                </div>
-                                <div class="dcf-styled-radio">
-                                    <input id="staff_member_Position" name="Position" type="radio"
-                                           value="staff member">
-                                    <label for="staff_member_Position" class="dcf-label">staff member</label>
-                                </div>
-                                <div class="dcf-styled-radio">
-                                    <input id="other_Position" name="Position" type="radio" value="other">
-                                    <label for="other_Position" class="dcf-label">other</label>
-                                </div>
-                            </fieldset>
+                        <div class="dcf-input-radio">
+                            <input id="faculty_member_Position" name="Position" type="radio"
+                                   value="faculty member">
+                            <label for="faculty_member_Position" >faculty member</label>
                         </div>
-
-                        <div class="dcf-d-flex dcf-flex-col dcf-form-group">
-                            <label for="comments">Please provide your questions or comments in the area below: <sup
-                                    class="dcf-required">*</sup></label>
-                            <textarea cols="25" id="comments" name ="comments" rows="5" class="dcf-input-text-area"></textarea>
+                        <div class="dcf-input-radio">
+                            <input id="administrator_Position" name="Position" type="radio" value="administrator">
+                            <label for="administrator_Position">administrator</label>
                         </div>
-
-                        <div class="dcf-d-flex dcf-form-group">
-                            <label for="Student_Profile" id="Student_Profile_Label" class="dcf-label">Students' Grade
-                                at Time of
-                                Visit:<sup
-                                    class="dcf-required">
-                                *</sup></label>
-                            <div class="dcf-input-select">
-                                <select id="Student_Profile" name="Student_Profile"
-                                        aria-labelledby="Student_Profile_Label" class="dcf-input-select">
-                                    <option value="12th Grade (Seniors)">12th Grade (Seniors)</option>
-                                    <option value="11th Grade (Juniors)">11th Grade (Juniors)</option>
-                                    <option value="10th Grade (Sophomores)">10th Grade (Sophomores)</option>
-                                    <option value="9th Grade (Freshmen)">9th Grade (Freshmen)</option>
-                                    <option value="8th Grade">8th Grade</option>
-                                    <option value="Combination of Grades">Combination of Grades</option>
-                                    <option value="Current College Students">Current College Students</option>
-                                    <option value="Other">Other</option>
-                                </select>
-                            </div>
+                        <div class="dcf-input-radio">
+                            <input id="staff_member_Position" name="Position" type="radio"
+                                   value="staff member">
+                            <label for="staff_member_Position">staff member</label>
                         </div>
-
-
-                        <fieldset class="dcf-d-flex dcf-flex-col dcf-form-group">
-                            <legend class="dcf-legend">Styled Checkboxes</legend>
-                            <div class="dcf-styled-checkbox">
-                                <input id="elements-form-checkboxA" type="checkbox" value="0"
-                                       aria-labelledby="elements-form-checkboxA-label">
-                                <label for="elements-form-checkboxA"
-                                       id="elements-form-checkboxA-label"
-                                       class="dcf-label">
-                                    Checkbox A
-                                </label>
-                            </div>
-                            <div class="dcf-styled-checkbox">
-                                <input id="elements-form-checkboxB" type="checkbox" value="1"
-                                       aria-labelledby="elements-form-checkboxB-label" disabled>
-                                <label for="elements-form-checkboxB"
-                                       id="elements-form-checkboxB-label"
-                                       class="dcf-label">
-                                    Checkbox B
-                                </label>
-                            </div>
-                            <div class="dcf-styled-checkbox">
-                                <input id="elements-form-checkboxC" type="checkbox" value="2"
-                                       aria-labelledby="elements-form-checkboxC-label">
-                                <label for="elements-form-checkboxC"
-                                       id="elements-form-checkboxC-label"
-                                       class="dcf-label">
-                                    Checkbox C
-                                </label>
-                            </div>
-                        </fieldset>
-
-                        <div class="dcf-d-flex dcf-form-group">
-                            <label for="example-elements-form-datetime-flatpickr">Date/time: </label>
-                            <input id="example-elements-form-datetime-flatpickr" data-widget="flatpickr" type="text" class="flatpickr"
-                                       placeholder="Select Date & Time.."
-                                       readonly="readonly">
+                        <div class="dcf-input-radio">
+                            <input id="other_Position" name="Position" type="radio" value="other">
+                            <label for="other_Position">other</label>
                         </div>
-
-                        <div class="dcf-d-flex dcf-form-group">
-                            <label for="elements-form-input-file"
-                                   id="elements-form-input-file-label"
-                                   class="dcf-label">
-                                File input
-                            </label>
-                            <input id="elements-form-input-file" type="file"
-                                   aria-labelledby="elements-form-input-file-label" class="dcf-input-file">
-                        </div>
-
-                        <div class="dcf-d-flex dcf-form-group">
-                            <label for="elements-form-input-range"
-                                   id="elements-form-input-range-label"
-                                   class="dcf-label">
-                                Range Slider
-                            </label>
-                            <input id="elements-form-input-range" type="range"
-                                   aria-labelledby="elements-form-input-range-label" class="dcf-input-range">
-                        </div>
-
-                        <div class="dcf-d-flex dcf-form-group">
-                            <label for="tasks_comp">
-                                Tasks Completed:</label>
-                            <progress class="dcf-input-progress" value="50" max="100" id="tasks_comp"></progress>
-                        </div>
-
-                        <div role="progressbar" aria-valuenow="20" aria-valuemin="0"
-                             aria-valuetext="Step 2: Copying files... " aria-valuemax="100"
-                             class="dcf-form-group dcf-progress-bar dcf-d-flex">
-                            <div class="progress-indicator"></div>
-                            <span class="progress-label dcf-as-center">Step 2: Copying files...</span>
-                        </div>
-
-                        <input type="submit" value="Submit" class="dcf-btn dcf-btn-primary dcf-input-submit">
                     </fieldset>
-                </form>
-            </div>
-        </main>
-        <footer class="dcf-footer">
-            <div class="dcf-footer-global dcf-wrapper">
-                <section class="students">
-                    <h2 class="footer-header">Students</h2>
-                    <ul class="dcf-list-bare footer-text footer-link-list">
-                        <li><a href="http://www.unk.edu/offices/financial_aid/index.php">Financial Aid</a>
-                        </li>
-                        <li><a href="http://www.unk.edu/academic_affairs/academic_publications/catalogs.php">Course Catalogs</a>
-                        </li>
-                        <li><a href="http://www.unk.edu/offices/registrar/academic_policies_handbook/academic_calendar.php">Academic Calendar</a>
-                        </li>
-                        <li><a href="http://www.unk.edu/admissions/cost_information.php">Cost Information</a>
-                        </li>
-                        <li><a href="http://www.unk.edu/campus-map/">Campus Map</a>
-                        </li>
-                    </ul>
-                </section>
-                <section class="resources">
-                    <h2 class="footer-header">Resources</h2>
-                    <ul class="dcf-list-bare footer-text footer-link-list">
-                        <li><a href="http://myblue.unk.edu" target="_blank">MyBlue</a>
-                        </li>
-                        <li><a href="http://canvas.unk.edu" target="_blank">Canvas</a>
-                        </li>
-                        <li><a href="https://easi.unk.edu/" target="_blank">Easi</a>
-                        </li>
-                        <li><a href="https://firefly.nebraska.edu" target="_blank">Firefly</a>
-                        </li>
-                        <li><a href="http://www.unk.edu/offices/its/help_desk/index.php">HelpDesk</a>
-                        </li>
-                        <li><a href="http://www.unk.edu/offices/human_resources/employment/employment_opportunities.php">Work for UNK</a></li>
-                        <li><a href="http://library.unk.edu">Library</a></li>
-                        <li><a href="http://outlook.unk.edu" target="_blank">Email</a>
-                        </li>
-                        <li><a href="https://unk.box.com" target="_blank">UNK Box</a>
-                        </li>
-                    </ul>
-                </section>
-                <section class="affiliates">
-                    <h2 class="footer-header">Affiliates</h2>
-                    <ul class="dcf-list-bare footer-text footer-link-list">
-                        <li><a href="http://www.nebraska.edu" target="_blank">Nebraska System</a>
-                        </li>
-                        <li><a href="https://nufoundation.org/" target="_blank">University Foundation</a>
-                        </li>
-                        <li><a href="http://www.unkalumni.org" target="_blank">Alumni Association</a>
-                        </li>
-                        <li><a href="http://mona.unk.edu" target="_blank">Museum of Nebraska Art</a>
-                        </li>
-                        <li><a href="http://www.unk.edu/offices/safety_center/index.php" target="_blank" title="Nebraska Safety Center Website">Safety Center</a></li>
-                        <li><a href="http://www.lopers.com" target="_blank">Loper Athletics</a></li>
-                        <li><a href="http://www.unk.edu/academics/health_sciences/unmc-programs-at-unk.php" target="_blank">UNMC at UNK</a></li>
-                    </ul>
-                </section>
-                <section class="contact">
-                    <h2 class="footer-header">The University of Nebraska at Kearney</h2>
-                    <div class="contactInfo footer-text">
-                        <p class="dcf-mb-3">
-                            <span class="dcf-sr-only" id="footer-address-label">Address</span>
-                            <span
-                                aria-labelledby="footer-address-label">2504 9th Ave, Kearney, NE 68849</span>
-                            <br/>
-                            <span class="dcf-sr-only" id="footer-phone-label">Telephone</span>
-                            <a href="tel:3088658441"
-                                    aria-labelledby="footer-phone-label" class="footer-phone">308-865-8441</a>
-                        </p>
-                        <ul class="dcf-list-bare footer-link-list footer-link-contact">
-                            <li><a href="http://www.unk.edu/directory/">Directory</a></li>
-                            <li><a class="safety-link" href="http://www.unk.edu/about/safety-information.php">Safety</a></li>
-                            <li><a href="https://secure.ethicspoint.com/domain/media/en/gui/52126/index.html">Report Fraud/Misconduct</a></li>
-                        </ul>
-                        <p class="dcf-mb-0">
-                            © Copyright 2018  |  <a href="http://unkcms-app.unk.edu:8080" id="cmsLogin"
-                                                    class="cms-login">Login</a>
-                        </p>
-                    </div>
-                    <div class="social">
-                        <div class="svg-container">
-                            <img class="univ-logo" src="img/global-logo1.svg" alt="University of Nebraska logo">
-                            <!--<svg version="1.1" xmlns="http://www.w3.org/2000/svg"-->
-                             <!--preserveAspectRatio="xMaxYMax meet" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"-->
-                             <!--y="0px" viewBox="0 0 79.3 20.8" xml:space="preserve">-->
-                        <!--<g>-->
-                            <!--<path d="M29.6,1.7v2.6c0,0.6,0,0.8,0.1,1c0.1,0.3,0.4,0.4,0.7,0.4c0.4,0,0.7-0.2,0.8-0.5c0.1-0.2,0.1-0.4,0.1-0.9V1.7h0.5v2.5-->
-                                <!--c0,0.7,0,0.9-0.2,1.2C31.4,5.8,31,6,30.4,6s-1-0.3-1.2-0.8c-0.1-0.3-0.1-0.5-0.1-1.1V1.7H29.6"/>-->
-                            <!--<polyline points="35.5,6 35,6 33.1,2.5 33.1,6 32.6,6 32.6,1.7 33.1,1.7 35,5.2 35,1.7 35.5,1.7 35.5,6 	"/>-->
-                            <!--<rect x="36.4" y="1.7" width="0.5" height="4.3"/>-->
-                            <!--<polyline points="39,5.1 40.2,1.7 40.6,1.7 39.1,6 38.8,6 37.5,1.7 37.9,1.7 39,5.1 	"/>-->
-                            <!--<polyline points="43,3.6 43,4 41.8,4 41.8,5.6 43.2,5.6 43.2,6 41.3,6 41.3,1.7 43,1.7 43,2.1 41.8,2.1 41.8,3.6 43,3.6 	"/>-->
-                            <!--<path d="M43.9,6h0.5V4h0.4l1,2h0.5l-1.1-2c0.2-0.1,0.3-0.2,0.4-0.3c0.2-0.2,0.3-0.6,0.3-0.9c0-0.4-0.2-0.8-0.4-0.9-->
-                                <!--s-0.3-0.1-0.7-0.1h-0.9V6 M44.4,3.6V2.1h0.5c0.4,0,0.5,0.2,0.5,0.7c0,0.3-0.1,0.6-0.2,0.7c-0.1,0.1-0.2,0.1-0.5,0.1H44.4z"/>-->
-                            <!--<path d="M48.3,2.6C48.1,2.2,48,2,47.7,2s-0.5,0.3-0.5,0.7c0,0.3,0.1,0.5,0.6,0.9c0.4,0.3,0.5,0.4,0.6,0.5c0.2,0.2,0.2,0.4,0.2,0.8-->
-                                <!--c0,0.7-0.5,1.3-1.1,1.3c-0.5,0-0.8-0.2-1-0.6L46.8,5c0.1,0.4,0.4,0.6,0.7,0.6c0.4,0,0.6-0.3,0.6-0.8c0-0.2-0.1-0.4-0.2-0.5-->
-                                <!--c-0.1-0.1-0.1-0.1-0.4-0.4c-0.6-0.4-0.8-0.7-0.8-1.2c0-0.6,0.4-1.1,1-1.1c0.4,0,0.7,0.2,0.9,0.6L48.3,2.6"/>-->
-                            <!--<rect x="49.4" y="1.7" width="0.5" height="4.3"/>-->
-                            <!--<polyline points="52.2,6 51.7,6 51.7,2.1 50.7,2.1 50.7,1.7 53.2,1.7 53.2,2.1 52.2,2.1 52.2,6 	"/>-->
-                            <!--<polyline points="56.5,1.7 55.3,4.1 55.3,6 54.9,6 54.9,4.1 53.7,1.7 54.2,1.7 55.1,3.6 56.1,1.7 56.5,1.7 	"/>-->
-                            <!--<path d="M64.7,1.6c-1.1,0-1.7,0.8-1.7,2.2c0,0.8,0.2,1.3,0.5,1.7C63.8,5.8,64.2,6,64.7,6s0.9-0.2,1.2-0.5c0.3-0.4,0.5-1,0.5-1.7-->
-                                <!--C66.4,2.4,65.8,1.6,64.7,1.6 M64.7,2c0.7,0,1.2,0.7,1.2,1.8s-0.4,1.8-1.2,1.8c-0.7,0-1.2-0.7-1.2-1.9C63.5,2.7,64,2,64.7,2z"/>-->
-                            <!--<polyline points="68.9,3.6 68.9,4 67.7,4 67.7,6 67.3,6 67.3,1.7 69,1.7 69,2.1 67.7,2.1 67.7,3.6 68.9,3.6 	"/>-->
-                            <!--<path d="M15.4,1.3h-5v0.6L10.7,2c1.5,0.3,1.8,0.3,1.8,2.2c0,0,0,10.2,0,11C12,14.4,4.2,1.3,4.2,1.3H0v0.6h0.4C2,2.1,2.2,2.1,2.2,4-->
-                                <!--v13.7c0,1.7-0.3,1.7-1.6,1.9H0v0.1v0.5h5.8v-0.6l-0.6-0.1c-1.4-0.2-1.6-0.2-1.6-1.9c0,0,0-10.8,0-11.6c0.4,0.7,9,14.2,9,14.2h1.2V4-->
-                                <!--c0-1.6,0.2-1.7,1.5-2.1l0.3-0.1V1.3H15.4"/>-->
-                            <!--<path d="M29.5,19.4c-1.8,0-2.3-1-2.3-4.4c0,0,0-4.3,0-4.4c0.8-0.9,1.4-1.2,2.1-1.2c1.9,0,3.3,2.3,3.3,5.4-->
-                                <!--C32.6,17.6,31.4,19.4,29.5,19.4 M30.3,7.5C29,7.5,28,8,27.1,9.1c0-0.7,0-9.1,0-9.1L27,0.1l-3.5,1.3V2h0.2c0.3-0.1,0.4-0.1,0.5-0.1-->
-                                <!--c0.5,0,0.7,0.2,0.7,1.5v11.9c0,2.5-0.1,3.4-0.7,5v0.1l0.7,0.4c0,0,1.4-1.6,1.6-1.9c0.8,1.3,1.9,1.9,3.3,1.9c2.9,0,5.1-3,5.1-6.9-->
-                                <!--C34.8,10.1,33,7.5,30.3,7.5z"/>-->
-                            <!--<path d="M75,17.4c-0.7,0.9-1.6,1.4-2.3,1.4c-1.1,0-1.9-0.9-1.9-2.2c0-2.3,2.3-3.1,4.2-3.7l0,0C75,13.2,75,17.3,75,17.4 M68.4,17.3-->
-                                <!--c0,0.8,0.3,1.6,0.8,2.2c-0.2,0-0.3,0-0.3,0c-0.1-0.1-4.1-7.4-4.1-7.5c0.7-1,2.7-2.5,4.1-2.7c0.4,0,0.7-0.1,0.8,0-->
-                                <!--c0.3,0.4,0.9,0.4,0.9,0.4c0.1,0,0.9,0.1,1.6-1c0,0,0-0.2,0.4-0.2c1.7,0,2.4,2,2.4,3.3C72.5,12.6,68.4,13.9,68.4,17.3z M78.5,18.2-->
-                                <!--l-0.1,0.1c-0.4,0.5-0.5,0.5-0.7,0.5c-0.3,0-0.5-0.5-0.5-1.2v-5.8c0-1.6-0.3-2.3-1.1-2.9c-2.2-1.8-4.5-1.8-5.3-1.8-->
-                                <!--c-2.3-0.1-7.8,3.1-9.3,6.8c0-1.4,0-13.9,0-13.9l-0.2,0.1L58,1.4V2h0.2c0.2,0,0.3-0.1,0.5-0.1c0.4,0,0.6,0.2,0.6,1.3-->
-                                <!--c0,0,0,16.1,0,16.3c-0.2,0-1.3,0.2-1.3,0.2v0.7h4.8v-0.7c0,0-1.1-0.2-1.3-0.2c0-2.8,0.1-3.5,1.7-5.7c0.2,0.3,2.9,5.4,3,5.7-->
-                                <!--c-0.3,0-1.2,0.2-1.2,0.2v0.8h5.3l0,0c0.4,0.2,0.9,0.3,1.4,0.3c1.4,0,2.7-0.8,3.4-2.1c0.1,1.3,0.8,2.1,1.8,2.1-->
-                                <!--c0.6,0,1.4-0.6,2.2-1.7l0.1-0.1L78.5,18.2z"/>-->
-                            <!--<path d="M19.5,8.7c1.2,0,2,0.9,2,2.3c0,0.7-0.2,1.1-1.6,1.5c0,0-2.7,0.7-3.4,0.8C16.6,10.5,17.7,8.7,19.5,8.7 M23.5,16.7l-0.1,0.1-->
-                                <!--c-1,1.4-1.8,2-3,2c-1.9,0-3.4-1.7-3.8-4.1c0.2-0.1,7.6-2,7.6-2v-0.1c-0.4-3.2-2.1-5-4.7-5c-2.9,0-5.2,3.2-5.2,7.1-->
-                                <!--c0,3.6,2.3,6.1,5.4,6.1c2,0,3.5-1,4.6-3.3v-0.1L23.5,16.7z"/>-->
-                            <!--<path d="M46.9,17.5c-0.7,0.9-1.6,1.4-2.3,1.4c-1.1,0-1.9-0.9-1.9-2.2c0-2.3,2.3-3.1,4.2-3.7l0,0C46.9,13.3,46.9,17.4,46.9,17.5-->
-                                 <!--M55.7,12.8c-2.7-1.2-3-1.4-3-2.5c0-0.8,0.8-1.6,1.8-1.6c0,0,0.8,0,0.9,0.3c0,0.1,0.4,1.2,1.7,1c0.6-0.1,0.8-0.6,0.8-1-->
-                                <!--c0-0.8-0.9-1.5-2.3-1.5c-2.8,0-4.9,1.6-4.9,3.8c0,2,1.7,2.8,3.3,3.5c1.4,0.6,2.7,1.2,2.7,2.7c0,1.1-1,2-2.2,2s-1.6-0.6-1.7-1.5-->
-                                <!--c-0.1-0.9-0.8-1.1-1.4-1.1c-0.7,0-1.2,0.5-1.3,1.3c0,0.2,0,0.2,0.1,0.4c-0.3,0.3-0.4,0.4-0.6,0.4c-0.3,0-0.5-0.5-0.5-1.2v-5.3l0,0-->
-                                <!--v-0.4c0-1.6-0.3-2.3-1.1-2.9C46.7,8,44,7,41.8,7.5c-1.2,0.3-3.2,1.8-4.2,4.3c-0.1-2-0.3-2.8-1-4.1l-0.1-0.1L34,8.8V9h0.5h0.1-->
-                                <!--c0.7,0,1.1,0.9,1.1,3.1c0,0,0,7.2,0,7.4c-0.2,0-1.3,0.2-1.3,0.2v0.6h4.9v-0.6c0,0-1.2-0.2-1.4-0.2c0-0.2,0-2.9,0-2.9-->
-                                <!--c0.3-6,1.7-6.7,2.3-7c0.5-0.3,1.2-0.4,1.2-0.3c0.3,0.4,0.9,0.4,0.9,0.4c0.2,0,1,0.1,1.6-1c0,0,0-0.2,0.4-0.2c1.7,0,2.4,2,2.4,3.3-->
-                                <!--l0,0l0,0c-2.5,0.8-6.6,2.2-6.6,5.5c0,2,1.4,3.4,3.4,3.4c1.4,0,2.7-0.8,3.4-2.1c0.1,1.3,0.8,2.1,1.8,2.1c0.5,0,1.1-0.4,1.8-1.2-->
-                                <!--c0.7,0.8,2,1.2,3.6,1.2c2.5,0,4.5-1.7,4.5-3.9C58.8,15.1,57.6,13.6,55.7,12.8z"/>-->
-                            <!--</g>-->
-                        <!--</svg>-->
-                        </div>
+                </div>
+
+                <div class="dcf-d-flex dcf-flex-col dcf-form-group">
+                    <label for="comments">Please provide your questions or comments in the area below: <sup
+                            class="dcf-required">*</sup></label>
+                    <textarea cols="25" id="comments" name ="comments" rows="5" class="dcf-input-text-area"></textarea>
+                </div>
+
+                <div class="dcf-d-flex dcf-form-group dcf-input-group dcf-ai-baseline">
+                    <label for="Student_Profile" id="Student_Profile_Label" class="dcf-label">Students' Grade
+                        at Time of
+                        Visit:<sup
+                                class="dcf-required">
+                            *</sup></label>
+
+                    <select id="Student_Profile" name="Student_Profile" class="dcf-input-select"
+                            aria-labelledby="Student_Profile_Label" class="dcf-input-select">
+                        <option value="12th Grade (Seniors)">12th Grade (Seniors)</option>
+                        <option value="11th Grade (Juniors)">11th Grade (Juniors)</option>
+                        <option value="10th Grade (Sophomores)">10th Grade (Sophomores)</option>
+                        <option value="9th Grade (Freshmen)">9th Grade (Freshmen)</option>
+                        <option value="8th Grade">8th Grade</option>
+                        <option value="Combination of Grades">Combination of Grades</option>
+                        <option value="Current College Students">Current College Students</option>
+                        <option value="Current College Students">Current College Students Current College Students
+                            Current College Students Current College Students Current tomato College StudentsCurrent
+                            College Students</option>
+                        <option value="Other">Other</option>
+                    </select>
+
+                </div>
 
 
-                        <div class="social-icons">
-                            <a href="https://www.facebook.com/UNKearney" target="_blank">
-                                <img alt="UNK on Facebook" src="https://www.unk.edu/_files/redesign/images/facebook.png"/>
-                            </a>
-                            <a href="https://twitter.com/UNKearney" target="_blank">
-                                <img alt="UNK Twitter" src="https://www.unk.edu/_files/redesign/images/twitter.png"/>
-                            </a>
-                            <a href="https://www.youtube.com/user/UNKearney" target="_blank">
-                                <img alt="UNK Youtube Channel" src="https://www.unk.edu/_files/redesign/images/youtube.png"/>
-                            </a>
-                            <a href="https://www.pinterest.com/unkearney/" target="_blank">
-                                <img alt="UNK Pinterest" src="https://www.unk.edu/_files/redesign/images/pinterest.png"/>
-                            </a>
-                            <a href="http://instagram.com/UNKearney" target="_blank">
-                                <img alt="UNK Instagram" src="https://www.unk.edu/_files/redesign/images/instagram.png"/>
-                            </a>
-                        </div>
+                <fieldset class="dcf-d-flex dcf-flex-col dcf-form-group">
+                    <legend class="dcf-legend">Styled Checkboxes</legend>
+                    <div class="dcf-input-checkbox">
+                        <input id="elements-form-checkboxA" type="checkbox" value="0"
+                               aria-labelledby="elements-form-checkboxA-label">
+                        <label for="elements-form-checkboxA"
+                               id="elements-form-checkboxA-label"
+                              >
+                            Checkbox A
+                        </label>
                     </div>
-                </section>
+                    <div class="dcf-input-checkbox">
+                        <input id="elements-form-checkboxB" type="checkbox" value="1"
+                               aria-labelledby="elements-form-checkboxB-label" disabled>
+                        <label for="elements-form-checkboxB"
+                               id="elements-form-checkboxB-label"
+                              >
+                            Checkbox B
+                        </label>
+                    </div>
+                    <div class="dcf-input-checkbox">
+                        <input id="elements-form-checkboxC" type="checkbox" value="2"
+                               aria-labelledby="elements-form-checkboxC-label">
+                        <label for="elements-form-checkboxC"
+                               id="elements-form-checkboxC-label"
+                              >
+                            Checkbox C
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="dcf-d-flex dcf-form-group dcf-ai-baseline">
+                    <label for="example-elements-form-datetime-flatpickr">Date/time: </label>
+                    <input id="example-elements-form-datetime-flatpickr" data-widget="flatpickr" type="text" class="flatpickr"
+                           placeholder="Select Date & Time.."
+                           readonly="readonly">
+                </div>
+
+                <div class="dcf-d-flex dcf-form-group dcf-ai-baseline">
+                    <label for="elements-form-input-file"
+                           id="elements-form-input-file-label"
+                           class="dcf-label"
+                          >
+                        File input
+                    </label>
+                    <input id="elements-form-input-file" type="file"
+                           aria-labelledby="elements-form-input-file-label" class="dcf-input-file">
+                </div>
+
+                <div class="dcf-d-flex dcf-form-group dcf-ai-baseline">
+                    <label for="elements-form-input-range"
+                           id="elements-form-input-range-label"
+                          >
+                        Range Slider
+                    </label>
+                    <input id="elements-form-input-range" type="range"
+                           aria-labelledby="elements-form-input-range-label" class="dcf-input-range">
+                </div>
+
+                <div class="dcf-d-flex dcf-form-group dcf-ai-center">
+                    <label for="tasks_comp">
+                        Tasks Completed:</label>
+                    <progress class="dcf-input-progress" value="50" max="100" id="tasks_comp"></progress>
+                </div>
+
+                <div role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                     aria-valuetext="Step 2: Copying files... " aria-valuemax="100"
+                     class="dcf-form-group dcf-progress-bar dcf-d-flex">
+                    <div class="progress-indicator"></div>
+                    <span class="progress-label dcf-as-center">Step 2: Copying files...</span>
+                </div>
+
+                <input type="submit" value="Submit" class="dcf-btn dcf-btn-primary dcf-input-submit">
+            </fieldset>
+        </form>
+    </div>
+</main>
+<footer class="dcf-footer">
+    <div class="dcf-footer-global dcf-wrapper">
+        <section class="students">
+            <h2 class="footer-header">Students</h2>
+            <ul class="dcf-list-bare footer-text footer-link-list">
+                <li><a href="http://www.unk.edu/offices/financial_aid/index.php">Financial Aid</a>
+                </li>
+                <li><a href="http://www.unk.edu/academic_affairs/academic_publications/catalogs.php">Course Catalogs</a>
+                </li>
+                <li><a href="http://www.unk.edu/offices/registrar/academic_policies_handbook/academic_calendar.php">Academic Calendar</a>
+                </li>
+                <li><a href="http://www.unk.edu/admissions/cost_information.php">Cost Information</a>
+                </li>
+                <li><a href="http://www.unk.edu/campus-map/">Campus Map</a>
+                </li>
+            </ul>
+        </section>
+        <section class="resources">
+            <h2 class="footer-header">Resources</h2>
+            <ul class="dcf-list-bare footer-text footer-link-list">
+                <li><a href="http://myblue.unk.edu" target="_blank">MyBlue</a>
+                </li>
+                <li><a href="http://canvas.unk.edu" target="_blank">Canvas</a>
+                </li>
+                <li><a href="https://easi.unk.edu/" target="_blank">Easi</a>
+                </li>
+                <li><a href="https://firefly.nebraska.edu" target="_blank">Firefly</a>
+                </li>
+                <li><a href="http://www.unk.edu/offices/its/help_desk/index.php">HelpDesk</a>
+                </li>
+                <li><a href="http://www.unk.edu/offices/human_resources/employment/employment_opportunities.php">Work for UNK</a></li>
+                <li><a href="http://library.unk.edu">Library</a></li>
+                <li><a href="http://outlook.unk.edu" target="_blank">Email</a>
+                </li>
+                <li><a href="https://unk.box.com" target="_blank">UNK Box</a>
+                </li>
+            </ul>
+        </section>
+        <section class="affiliates">
+            <h2 class="footer-header">Affiliates</h2>
+            <ul class="dcf-list-bare footer-text footer-link-list">
+                <li><a href="http://www.nebraska.edu" target="_blank">Nebraska System</a>
+                </li>
+                <li><a href="https://nufoundation.org/" target="_blank">University Foundation</a>
+                </li>
+                <li><a href="http://www.unkalumni.org" target="_blank">Alumni Association</a>
+                </li>
+                <li><a href="http://mona.unk.edu" target="_blank">Museum of Nebraska Art</a>
+                </li>
+                <li><a href="http://www.unk.edu/offices/safety_center/index.php" target="_blank" title="Nebraska Safety Center Website">Safety Center</a></li>
+                <li><a href="http://www.lopers.com" target="_blank">Loper Athletics</a></li>
+                <li><a href="http://www.unk.edu/academics/health_sciences/unmc-programs-at-unk.php" target="_blank">UNMC at UNK</a></li>
+            </ul>
+        </section>
+        <section class="contact">
+            <h2 class="footer-header">The University of Nebraska at Kearney</h2>
+            <div class="contactInfo footer-text">
+                <p class="dcf-mb-3">
+                    <span class="dcf-sr-only" id="footer-address-label">Address</span>
+                    <span
+                            aria-labelledby="footer-address-label">2504 9th Ave, Kearney, NE 68849</span>
+                    <br/>
+                    <span class="dcf-sr-only" id="footer-phone-label">Telephone</span>
+                    <a href="tel:3088658441"
+                       aria-labelledby="footer-phone-label" class="footer-phone">308-865-8441</a>
+                </p>
+                <ul class="dcf-list-bare footer-link-list footer-link-contact">
+                    <li><a href="http://www.unk.edu/directory/">Directory</a></li>
+                    <li><a class="safety-link" href="http://www.unk.edu/about/safety-information.php">Safety</a></li>
+                    <li><a href="https://secure.ethicspoint.com/domain/media/en/gui/52126/index.html">Report Fraud/Misconduct</a></li>
+                </ul>
+                <p class="dcf-mb-0">
+                    © Copyright 2018  |  <a href="http://unkcms-app.unk.edu:8080" id="cmsLogin"
+                                            class="cms-login">Login</a>
+                </p>
             </div>
-        </footer>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
-        <!--Flatpickr is included in DCF under assets/dist/js/vendor-->
-        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-        <script src="js/script.min.js"></script>
-    </body>
+            <div class="social">
+                <div class="svg-container">
+                    <img class="univ-logo" src="img/global-logo1.svg" alt="University of Nebraska logo">
+                    <!--<svg version="1.1" xmlns="http://www.w3.org/2000/svg"-->
+                    <!--preserveAspectRatio="xMaxYMax meet" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"-->
+                    <!--y="0px" viewBox="0 0 79.3 20.8" xml:space="preserve">-->
+                    <!--<g>-->
+                    <!--<path d="M29.6,1.7v2.6c0,0.6,0,0.8,0.1,1c0.1,0.3,0.4,0.4,0.7,0.4c0.4,0,0.7-0.2,0.8-0.5c0.1-0.2,0.1-0.4,0.1-0.9V1.7h0.5v2.5-->
+                    <!--c0,0.7,0,0.9-0.2,1.2C31.4,5.8,31,6,30.4,6s-1-0.3-1.2-0.8c-0.1-0.3-0.1-0.5-0.1-1.1V1.7H29.6"/>-->
+                    <!--<polyline points="35.5,6 35,6 33.1,2.5 33.1,6 32.6,6 32.6,1.7 33.1,1.7 35,5.2 35,1.7 35.5,1.7 35.5,6 	"/>-->
+                    <!--<rect x="36.4" y="1.7" width="0.5" height="4.3"/>-->
+                    <!--<polyline points="39,5.1 40.2,1.7 40.6,1.7 39.1,6 38.8,6 37.5,1.7 37.9,1.7 39,5.1 	"/>-->
+                    <!--<polyline points="43,3.6 43,4 41.8,4 41.8,5.6 43.2,5.6 43.2,6 41.3,6 41.3,1.7 43,1.7 43,2.1 41.8,2.1 41.8,3.6 43,3.6 	"/>-->
+                    <!--<path d="M43.9,6h0.5V4h0.4l1,2h0.5l-1.1-2c0.2-0.1,0.3-0.2,0.4-0.3c0.2-0.2,0.3-0.6,0.3-0.9c0-0.4-0.2-0.8-0.4-0.9-->
+                    <!--s-0.3-0.1-0.7-0.1h-0.9V6 M44.4,3.6V2.1h0.5c0.4,0,0.5,0.2,0.5,0.7c0,0.3-0.1,0.6-0.2,0.7c-0.1,0.1-0.2,0.1-0.5,0.1H44.4z"/>-->
+                    <!--<path d="M48.3,2.6C48.1,2.2,48,2,47.7,2s-0.5,0.3-0.5,0.7c0,0.3,0.1,0.5,0.6,0.9c0.4,0.3,0.5,0.4,0.6,0.5c0.2,0.2,0.2,0.4,0.2,0.8-->
+                    <!--c0,0.7-0.5,1.3-1.1,1.3c-0.5,0-0.8-0.2-1-0.6L46.8,5c0.1,0.4,0.4,0.6,0.7,0.6c0.4,0,0.6-0.3,0.6-0.8c0-0.2-0.1-0.4-0.2-0.5-->
+                    <!--c-0.1-0.1-0.1-0.1-0.4-0.4c-0.6-0.4-0.8-0.7-0.8-1.2c0-0.6,0.4-1.1,1-1.1c0.4,0,0.7,0.2,0.9,0.6L48.3,2.6"/>-->
+                    <!--<rect x="49.4" y="1.7" width="0.5" height="4.3"/>-->
+                    <!--<polyline points="52.2,6 51.7,6 51.7,2.1 50.7,2.1 50.7,1.7 53.2,1.7 53.2,2.1 52.2,2.1 52.2,6 	"/>-->
+                    <!--<polyline points="56.5,1.7 55.3,4.1 55.3,6 54.9,6 54.9,4.1 53.7,1.7 54.2,1.7 55.1,3.6 56.1,1.7 56.5,1.7 	"/>-->
+                    <!--<path d="M64.7,1.6c-1.1,0-1.7,0.8-1.7,2.2c0,0.8,0.2,1.3,0.5,1.7C63.8,5.8,64.2,6,64.7,6s0.9-0.2,1.2-0.5c0.3-0.4,0.5-1,0.5-1.7-->
+                    <!--C66.4,2.4,65.8,1.6,64.7,1.6 M64.7,2c0.7,0,1.2,0.7,1.2,1.8s-0.4,1.8-1.2,1.8c-0.7,0-1.2-0.7-1.2-1.9C63.5,2.7,64,2,64.7,2z"/>-->
+                    <!--<polyline points="68.9,3.6 68.9,4 67.7,4 67.7,6 67.3,6 67.3,1.7 69,1.7 69,2.1 67.7,2.1 67.7,3.6 68.9,3.6 	"/>-->
+                    <!--<path d="M15.4,1.3h-5v0.6L10.7,2c1.5,0.3,1.8,0.3,1.8,2.2c0,0,0,10.2,0,11C12,14.4,4.2,1.3,4.2,1.3H0v0.6h0.4C2,2.1,2.2,2.1,2.2,4-->
+                    <!--v13.7c0,1.7-0.3,1.7-1.6,1.9H0v0.1v0.5h5.8v-0.6l-0.6-0.1c-1.4-0.2-1.6-0.2-1.6-1.9c0,0,0-10.8,0-11.6c0.4,0.7,9,14.2,9,14.2h1.2V4-->
+                    <!--c0-1.6,0.2-1.7,1.5-2.1l0.3-0.1V1.3H15.4"/>-->
+                    <!--<path d="M29.5,19.4c-1.8,0-2.3-1-2.3-4.4c0,0,0-4.3,0-4.4c0.8-0.9,1.4-1.2,2.1-1.2c1.9,0,3.3,2.3,3.3,5.4-->
+                    <!--C32.6,17.6,31.4,19.4,29.5,19.4 M30.3,7.5C29,7.5,28,8,27.1,9.1c0-0.7,0-9.1,0-9.1L27,0.1l-3.5,1.3V2h0.2c0.3-0.1,0.4-0.1,0.5-0.1-->
+                    <!--c0.5,0,0.7,0.2,0.7,1.5v11.9c0,2.5-0.1,3.4-0.7,5v0.1l0.7,0.4c0,0,1.4-1.6,1.6-1.9c0.8,1.3,1.9,1.9,3.3,1.9c2.9,0,5.1-3,5.1-6.9-->
+                    <!--C34.8,10.1,33,7.5,30.3,7.5z"/>-->
+                    <!--<path d="M75,17.4c-0.7,0.9-1.6,1.4-2.3,1.4c-1.1,0-1.9-0.9-1.9-2.2c0-2.3,2.3-3.1,4.2-3.7l0,0C75,13.2,75,17.3,75,17.4 M68.4,17.3-->
+                    <!--c0,0.8,0.3,1.6,0.8,2.2c-0.2,0-0.3,0-0.3,0c-0.1-0.1-4.1-7.4-4.1-7.5c0.7-1,2.7-2.5,4.1-2.7c0.4,0,0.7-0.1,0.8,0-->
+                    <!--c0.3,0.4,0.9,0.4,0.9,0.4c0.1,0,0.9,0.1,1.6-1c0,0,0-0.2,0.4-0.2c1.7,0,2.4,2,2.4,3.3C72.5,12.6,68.4,13.9,68.4,17.3z M78.5,18.2-->
+                    <!--l-0.1,0.1c-0.4,0.5-0.5,0.5-0.7,0.5c-0.3,0-0.5-0.5-0.5-1.2v-5.8c0-1.6-0.3-2.3-1.1-2.9c-2.2-1.8-4.5-1.8-5.3-1.8-->
+                    <!--c-2.3-0.1-7.8,3.1-9.3,6.8c0-1.4,0-13.9,0-13.9l-0.2,0.1L58,1.4V2h0.2c0.2,0,0.3-0.1,0.5-0.1c0.4,0,0.6,0.2,0.6,1.3-->
+                    <!--c0,0,0,16.1,0,16.3c-0.2,0-1.3,0.2-1.3,0.2v0.7h4.8v-0.7c0,0-1.1-0.2-1.3-0.2c0-2.8,0.1-3.5,1.7-5.7c0.2,0.3,2.9,5.4,3,5.7-->
+                    <!--c-0.3,0-1.2,0.2-1.2,0.2v0.8h5.3l0,0c0.4,0.2,0.9,0.3,1.4,0.3c1.4,0,2.7-0.8,3.4-2.1c0.1,1.3,0.8,2.1,1.8,2.1-->
+                    <!--c0.6,0,1.4-0.6,2.2-1.7l0.1-0.1L78.5,18.2z"/>-->
+                    <!--<path d="M19.5,8.7c1.2,0,2,0.9,2,2.3c0,0.7-0.2,1.1-1.6,1.5c0,0-2.7,0.7-3.4,0.8C16.6,10.5,17.7,8.7,19.5,8.7 M23.5,16.7l-0.1,0.1-->
+                    <!--c-1,1.4-1.8,2-3,2c-1.9,0-3.4-1.7-3.8-4.1c0.2-0.1,7.6-2,7.6-2v-0.1c-0.4-3.2-2.1-5-4.7-5c-2.9,0-5.2,3.2-5.2,7.1-->
+                    <!--c0,3.6,2.3,6.1,5.4,6.1c2,0,3.5-1,4.6-3.3v-0.1L23.5,16.7z"/>-->
+                    <!--<path d="M46.9,17.5c-0.7,0.9-1.6,1.4-2.3,1.4c-1.1,0-1.9-0.9-1.9-2.2c0-2.3,2.3-3.1,4.2-3.7l0,0C46.9,13.3,46.9,17.4,46.9,17.5-->
+                    <!--M55.7,12.8c-2.7-1.2-3-1.4-3-2.5c0-0.8,0.8-1.6,1.8-1.6c0,0,0.8,0,0.9,0.3c0,0.1,0.4,1.2,1.7,1c0.6-0.1,0.8-0.6,0.8-1-->
+                    <!--c0-0.8-0.9-1.5-2.3-1.5c-2.8,0-4.9,1.6-4.9,3.8c0,2,1.7,2.8,3.3,3.5c1.4,0.6,2.7,1.2,2.7,2.7c0,1.1-1,2-2.2,2s-1.6-0.6-1.7-1.5-->
+                    <!--c-0.1-0.9-0.8-1.1-1.4-1.1c-0.7,0-1.2,0.5-1.3,1.3c0,0.2,0,0.2,0.1,0.4c-0.3,0.3-0.4,0.4-0.6,0.4c-0.3,0-0.5-0.5-0.5-1.2v-5.3l0,0-->
+                    <!--v-0.4c0-1.6-0.3-2.3-1.1-2.9C46.7,8,44,7,41.8,7.5c-1.2,0.3-3.2,1.8-4.2,4.3c-0.1-2-0.3-2.8-1-4.1l-0.1-0.1L34,8.8V9h0.5h0.1-->
+                    <!--c0.7,0,1.1,0.9,1.1,3.1c0,0,0,7.2,0,7.4c-0.2,0-1.3,0.2-1.3,0.2v0.6h4.9v-0.6c0,0-1.2-0.2-1.4-0.2c0-0.2,0-2.9,0-2.9-->
+                    <!--c0.3-6,1.7-6.7,2.3-7c0.5-0.3,1.2-0.4,1.2-0.3c0.3,0.4,0.9,0.4,0.9,0.4c0.2,0,1,0.1,1.6-1c0,0,0-0.2,0.4-0.2c1.7,0,2.4,2,2.4,3.3-->
+                    <!--l0,0l0,0c-2.5,0.8-6.6,2.2-6.6,5.5c0,2,1.4,3.4,3.4,3.4c1.4,0,2.7-0.8,3.4-2.1c0.1,1.3,0.8,2.1,1.8,2.1c0.5,0,1.1-0.4,1.8-1.2-->
+                    <!--c0.7,0.8,2,1.2,3.6,1.2c2.5,0,4.5-1.7,4.5-3.9C58.8,15.1,57.6,13.6,55.7,12.8z"/>-->
+                    <!--</g>-->
+                    <!--</svg>-->
+                </div>
+
+
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/UNKearney" target="_blank">
+                        <img alt="UNK on Facebook" src="https://www.unk.edu/_files/redesign/images/facebook.png"/>
+                    </a>
+                    <a href="https://twitter.com/UNKearney" target="_blank">
+                        <img alt="UNK Twitter" src="https://www.unk.edu/_files/redesign/images/twitter.png"/>
+                    </a>
+                    <a href="https://www.youtube.com/user/UNKearney" target="_blank">
+                        <img alt="UNK Youtube Channel" src="https://www.unk.edu/_files/redesign/images/youtube.png"/>
+                    </a>
+                    <a href="https://www.pinterest.com/unkearney/" target="_blank">
+                        <img alt="UNK Pinterest" src="https://www.unk.edu/_files/redesign/images/pinterest.png"/>
+                    </a>
+                    <a href="http://instagram.com/UNKearney" target="_blank">
+                        <img alt="UNK Instagram" src="https://www.unk.edu/_files/redesign/images/instagram.png"/>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+<!--Flatpickr is included in DCF under assets/dist/js/vendor-->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="js/script.min.js"></script>
+</body>
 
 </html>

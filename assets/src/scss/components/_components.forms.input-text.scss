@@ -1,0 +1,33 @@
+//////////////////////////////////////////////////////
+// !THEME / COMPONENTS / FORMS - INPUT TEXT & TEXTAREA
+//////////////////////////////////////////////////////
+
+.unk .dcf-input-text {
+	width: 100%;
+}
+
+
+.unk .dcf-input-text, .unk .dcf-input-text-area {
+	border: 1px solid $color-border;
+	border-radius: $roundrect;
+	box-shadow: inset 0 1px 2px fade-out($color-border,0.5);
+	@include pb-2;
+	@include pl-3;
+	@include pr-3;
+	@include pt-2;
+	transition: border-color $hover-off, box-shadow $hover-off;
+}
+
+
+.unk .dcf-input-text:hover, .unk .dcf-input-text-area:hover {
+	border-color: $color-border-hover;
+	box-shadow: inset 0 1px 2px fade-out($color-border,.5);
+	transition: border-color $hover-on, box-shadow $hover-on;
+}
+
+
+.unk .dcf-input-text:focus, .unk .dcf-input-text-area:focus {
+	border-color: $color-button;
+	outline: none;
+}
+

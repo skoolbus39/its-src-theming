@@ -9,12 +9,16 @@
 }
 
 
-// Form group
+// Form group:
 .unk .dcf-form-group {
   @include mb-5;
 
+	&.dcf-d-flex {
+		flex-wrap: wrap;
+	}
+
 	&>*:not(label):not(legend):not(:first-child) {
-		@include ml-4;
+		@include ml-0;
 	}
 
 	// no margin left when form elements are column-wise
@@ -25,12 +29,25 @@
 	}
 }
 
+@include mq(731px, min, width) {
+	.unk .dcf-form-group {
+		&.dcf-d-flex {
+			flex-wrap: nowrap;
+		}
+
+		// margin left on wider screens
+		&>*:not(label):not(legend):not(:first-child) {
+			@include ml-4;
+		}
+	}
+}
+
 
 // Form group and form with input group
-.unk .dcf-form-group,
-.unk .dcf-input-group-form {
-  margin-top: -#{ms(-12)}em; // Apply negative margin-top to equalize label margin-top
-}
+//.unk .dcf-form-group,
+//.unk .dcf-input-group-form {
+//  margin-top: -#{ms(-12)}em; // Apply negative margin-top to equalize label margin-top
+//}
 
 
 // Label
@@ -50,41 +67,11 @@
 
 
 // Input
-.unk .dcf-form-group.dcf-d-flex input {
-	&:not([type="radio"]):not([type="select"]):not([type="checkbox"]):not([type="datetime-local"]):not([type="file"]) {
-		flex: 0.6;
-	}
-}
-
 .unk .dcf-form-group input ~ label {
 	@include ml-2;
 }
 
 
-// Input: Text
-.unk .dcf-input-text, .unk .dcf-input-text-area {
-  border: 1px solid $color-border;
-  border-radius: $roundrect;
-  box-shadow: inset 0 1px 2px fade-out($color-border,0.5);
-  @include pb-2;
-  @include pl-3;
-  @include pr-3;
-  @include pt-2;
-  transition: border-color $hover-off, box-shadow $hover-off;
-}
-
-
-.unk .dcf-input-text:hover, .unk .dcf-input-text-area:hover {
-  border-color: $color-border-hover;
-  box-shadow: inset 0 1px 2px fade-out($color-border,.5);
-  transition: border-color $hover-on, box-shadow $hover-on;
-}
-
-
-.unk .dcf-input-text:focus, .unk .dcf-input-text-area:focus {
-  border-color: $color-button;
-  outline: none;
-}
 
 // Input: Control
 .unk .dcf-input-control {
@@ -97,6 +84,7 @@
 	border-radius: $roundrect;
 	border: 1px solid;
 	border-color: $color-border;
+	width: 100%;
 }
 
 
@@ -132,8 +120,8 @@
 
 
 // Inputs
-.unk .dcf-label + .dcf-input-text,
-.unk .dcf-label + .dcf-input-select,
-.unk .dcf-label + .dcf-input-group {
-  margin-top: #{ms(-12)}em;
-}
+//.unk .dcf-label + .dcf-input-text,
+//.unk .dcf-label + .dcf-input-select,
+//.unk .dcf-label + .dcf-input-group {
+//  margin-top: #{ms(-12)}em;
+//}
