@@ -51,10 +51,6 @@
 
 
 // Label
-.unk .dcf-label {
-  margin-top: #{ms(-12)}em;
-}
-
 .unk .dcf-form-group[disabled] label {
 	cursor: not-allowed !important;
 	opacity: .7;
