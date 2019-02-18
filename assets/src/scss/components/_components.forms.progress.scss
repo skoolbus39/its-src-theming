@@ -47,9 +47,9 @@
 		width: 25%;
 		overflow:hidden;
 		background-image:
-						-webkit-linear-gradient(-45deg, transparent 33%, fade_out($black, 0.8) 33%, fade_out($black, 0.8) 66%, transparent 66%),
-						-webkit-linear-gradient(top, fade_out($gray-light, 0.9), fade_out($gray-light, .9)),
-						-webkit-linear-gradient(to right, $color-brand-alpha 0%, $color-brand-beta 50%, $color-brand-alpha 100%);
+						-webkit-linear-gradient(-45deg, mix(white, $color-brand-beta, 70%) 36.5%, fade_out($color-brand-beta, 0.7) 36.5%, fade_out($color-brand-beta, 0.7) 62%, mix(white, $color-brand-beta, 70%) 62%),
+						-webkit-linear-gradient(top, fade_out($gray-light, 0.9) 0% , fade_out($gray-light, .9) 100%),
+						-webkit-linear-gradient(to left, fade_out(mix(white, $color-brand-beta, 80%), 0.25), fade_out(mix(white, $color-brand-beta, 80%), 0.25));
 		background-size: 50px 100%, 100% 100%, 100% 100%;
 		animation: progressAnimate infinite linear 3s;
 
@@ -57,6 +57,7 @@
 
 	.dcf-progress-label {
 		position: absolute;
+		text-shadow: 1px 1px 1px mix(white, $color-brand-beta, 88%);
 	}
 }
 
