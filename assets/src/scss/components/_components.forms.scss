@@ -17,14 +17,9 @@
 		flex-wrap: wrap;
 	}
 
-	&>*:not(label):not(legend):not(:first-child) {
-		@include ml-0;
-	}
-
-	// no margin left when form elements are column-wise
-	&.dcf-flex-col {
-		&>*:not(label):not(legend):not(:first-child) {
-			@include ml-0;
+	&>label {
+		&:first-child {
+			@include mr-4
 		}
 	}
 }
@@ -34,21 +29,8 @@
 		&.dcf-d-flex {
 			flex-wrap: nowrap;
 		}
-
-		// margin left on wider screens
-		&>*:not(label):not(legend):not(:first-child) {
-			@include ml-4;
-		}
 	}
 }
-
-
-// Form group and form with input group
-//.unk .dcf-form-group,
-//.unk .dcf-input-group-form {
-//  margin-top: -#{ms(-12)}em; // Apply negative margin-top to equalize label margin-top
-//}
-
 
 // Label
 .unk .dcf-form-group[disabled] label {
@@ -93,7 +75,7 @@
 
 // Input: Submit
 .unk .dcf-input-submit {
-	background-color: $gray-lightest;
+	background-color: $color-button;
 	border-color: $color-border;
 	text-transform: uppercase;
 	min-width: min-content;
@@ -113,11 +95,3 @@
   @include txt-xs;
   @include mt-1;
 }
-
-
-// Inputs
-//.unk .dcf-label + .dcf-input-text,
-//.unk .dcf-label + .dcf-input-select,
-//.unk .dcf-label + .dcf-input-group {
-//  margin-top: #{ms(-12)}em;
-//}

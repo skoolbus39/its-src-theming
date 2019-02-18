@@ -4,25 +4,25 @@
 
 
 // !Input Group Text Input
-.example .dcf-input-group .dcf-input-text:not(:first-child) {
+.unk .dcf-input-group .dcf-input-text:not(:first-child) {
   @include sharp-left;
 }
 
 
-.example .dcf-input-group .dcf-input-text:not(:last-child) {
+.unk .dcf-input-group .dcf-input-text:not(:last-child) {
   @include sharp-right;
 }
 
 
 // !Input Group Button
-.example .dcf-input-group .dcf-btn {
+.unk .dcf-input-group .dcf-btn {
   @include sharp-left;
   margin-left: -1px;
 }
 
 
 // !Input Group Add-on
-.example .dcf-input-group-addon {
+.unk .dcf-input-group-addon {
   @include bg-gray-lightest;
   border: 1px solid $color-border;
   color: $color-light-text;
@@ -33,13 +33,13 @@
 }
 
 
-.example .dcf-input-group-addon:first-child {
+.unk .dcf-input-group-addon:first-child {
   @include rounded-left;
   border-right-width: 0;
 }
 
 
-.example .dcf-input-group-addon:last-child {
+.unk .dcf-input-group-addon:last-child {
   @include rounded-right;
   border-left-width: 0;
 }

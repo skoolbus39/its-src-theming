@@ -28,22 +28,22 @@
 		box-shadow: 2px 0 3px 0 fade-out($gray-light, 0.25);
 	}
 
-	&::-webkit-progress-inner-element {
-
-	}
+	//&::-webkit-progress-inner-element {
+	//
+	//}
 }
 
-.dcf-progress-bar {
+.unk .dcf-progress-bar {
 	background-color: $gray-lightest;
 	border-radius: $roundrect;
 	border: 1px solid;
 	border-color: $color-border;
 	box-shadow: inset 0 1px 2px fade-out($color-border,0.1);
-	width: 20em;
+	width: 100%;
 	height: $length-em-6;
 	position: relative;
 
-	.progress-indicator {
+	.dcf-progress-indicator {
 		width: 25%;
 		overflow:hidden;
 		background-image:
@@ -55,7 +55,7 @@
 
 	}
 
-	.progress-label {
+	.dcf-progress-label {
 		position: absolute;
 	}
 }
