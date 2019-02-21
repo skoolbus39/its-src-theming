@@ -50,10 +50,10 @@
   .footer-header {
     color:  $color-brand-alpha;
     font-weight: normal;
+    font-size: #{ms(2)}em;
     @include font-bold-cn;
     @include uppercase;
     @include m-0;
-    @include txt-lg;
   }
 
   .footer-text {
@@ -171,11 +171,11 @@
 
 }
 
-@include mq(731px, min, width) {
-  .unk {
-
-  }
-}
+//@include mq(731px, min, width) {
+//  .unk {
+//
+//  }
+//}
 
 @include mq(1000, min, width) {
   .unk {
@@ -204,7 +204,7 @@
     }
 
     .footer-link-list li {
-      @include mb-1;
+      @include mb-2;
       line-height: auto;
     }
 
