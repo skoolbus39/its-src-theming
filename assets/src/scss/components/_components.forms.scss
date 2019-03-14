@@ -2,58 +2,54 @@
 // !THEME / COMPONENTS / FORMS
 //////////////////////////////
 
-
-// Legend
-.unk .dcf-legend {
-  @include mb-1;
+// Fieldset
+.unk .dcf-form fieldset {
+	@include b-0;
+	@include p-0;
 }
 
 
 // Form group:
 .unk .dcf-form-group {
   @include mb-5;
-
-	&.dcf-d-flex {
-		flex-wrap: wrap;
-	}
-
-	&>label {
-		&:first-child {
-			@include mr-4
-		}
-	}
-}
-
-@include mq(731px, min, width) {
-	.unk .dcf-form-group {
-		&.dcf-d-flex {
-			flex-wrap: nowrap;
-		}
-	}
 }
 
 // Label
+.unk input[disabled] ~ label,
 .unk .dcf-form-group[disabled] label {
 	cursor: not-allowed !important;
 	opacity: .7;
 }
 
-.unk .dcf-form-group input[disabled] ~ label {
-	cursor: not-allowed !important;
-	opacity: .7;
+
+// Input: General
+.unk .dcf-form input:not([type="submit"]),
+.unk .dcf-form textarea {
+	border: 1px solid $color-border-input;
+	border-radius: $roundrect;
+	box-shadow: inset 0 1px 2px fade-out($color-border-input-hover,1);
+	transition: border-color $hover-off, box-shadow $hover-off;
 }
 
-
-// Input
-.unk .dcf-form-group input ~ label {
-	@include ml-2;
+.unk .dcf-form input:not([type="submit"]):not([type="range"]),
+.unk .dcf-form textarea {
+	@include pb-2;
+	@include pl-3;
+	@include pr-3;
+	@include pt-2;
 }
 
+.unk .dcf-form input:not([type="submit"]):focus,
+.unk .dcf-form textarea:focus {
+	border-color: $color-border-input-focus;
+	outline: none;
+}
 
-
-// Input: Control
-.unk .dcf-input-control {
-  @include mr-1;
+.unk .dcf-form input:not([type="submit"]):enabled:hover,
+.unk .dcf-form textarea:enabled:hover {
+	border-color: $color-border-input-hover;
+	box-shadow: inset 0 1px 2px fade-out($color-border-input-hover,.5);
+	transition: border-color $hover-on, box-shadow $hover-on;
 }
 
 
@@ -66,13 +62,6 @@
 }
 
 
-// Required
-.unk .dcf-required {
-  color: $red;
-  @include txt-xs;
-  @include pl-1;
-}
-
 // Input: Submit
 .unk .dcf-input-submit {
 	background-color: $color-button;
@@ -84,6 +73,19 @@
 
 
 // Input: Range
+.unk .dcf-form input[type="range"] {
+	background-color: $gray-lightest;
+	border-radius: $pill;
+	max-width: 80%; // adjust max-width to play with the input width
+}
+
+
+// Required
+.unk .dcf-required {
+	color: $red;
+	@include txt-xs;
+	@include pl-1;
+}
 
 
 // Form Help

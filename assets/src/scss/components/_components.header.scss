@@ -77,7 +77,7 @@
 								"logo logo logo logo .        .               .             search        search        search" minmax($length-em-5, $length-em-6)
 								"logo logo logo logo .        nav-secondary   nav-secondary nav-secondary nav-secondary nav-secondary" minmax($length-em-5, $length-em-6)
 								"nav-primary nav-primary nav-primary nav-primary nav-primary nav-primary nav-primary nav-primary nav-primary nav-primary" minmax($length-em-8, auto)
-          / 1fr 1fr 1fr minmax($length-em-9, 2fr) 0.5fr 1fr 1fr 1fr 1fr 1fr ;
+          / 1fr 1fr 1fr minmax($length-em-9, 1.5fr) 0.5fr 1fr 1fr 1fr 1fr 1fr ;
 			}
 
 			.dcf-header-global::after {
@@ -106,6 +106,13 @@
 				width: auto !important
 			}
 		}
+	}
+}
+
+@media (min-width: _mq-em(731px)) and (max-width: _mq-em(800px)) {
+	// accommodate local header font size between these ranges before hidden in hamburger menu
+	.unk .dcf-header .dcf-nav-global {
+		font-size: calc(0.479em + 1vw);
 	}
 }
 

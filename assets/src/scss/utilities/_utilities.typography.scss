@@ -2,8 +2,29 @@
 // !THEME / UTILITIES / TYPOGRAPHY
 //////////////////////////////////
 
+// !Font-Size
+.unk .dcf-txt-base { @include txt-base(!important); }
+.unk .dcf-txt-3xs { @include txt-3xs(!important); }
+.unk .dcf-txt-2xs { @include txt-2xs(!important); }
+.unk .dcf-txt-xs { @include txt-xs(!important); }
+.unk .dcf-txt-sm { @include txt-sm(!important); }
+.unk .dcf-txt-md { @include txt-md(!important); }
+.unk .dcf-txt-lg { @include txt-lg(!important); }
+.unk .dcf-txt-h6 { @include txt-h6(!important); }
+.unk .dcf-txt-h5 { @include txt-h5(!important); }
+.unk .dcf-txt-h4 { @include txt-h4(!important); }
+.unk .dcf-txt-h3 { @include txt-h3(!important); }
+.unk .dcf-txt-h2 { @include txt-h2(!important); }
+.unk .dcf-txt-h1 { @include txt-h1(!important); }
+.unk .dcf-txt-xl { @include txt-xl(!important); }
+.unk .dcf-txt-2xl { @include txt-2xl(!important); }
+.unk .dcf-txt-3xl { @include txt-3xl(!important); }
+.unk .dcf-txt-4xl { @include txt-4xl(!important); }
+.unk .dcf-txt-5xl { @include txt-5xl(!important); }
+.unk .dcf-txt-6xl { @include txt-6xl(!important); }
+
 
 // !Letter Spacing
-.example-ls-0 { @include ls-0(!important); }
-.example-ls-1 { @include ls-1(!important); }
-.example-ls-2 { @include ls-2(!important); }
+.unk-ls-0 { @include ls-0(!important); }
+.unk-ls-1 { @include ls-1(!important); }
+.unk-ls-2 { @include ls-2(!important); }

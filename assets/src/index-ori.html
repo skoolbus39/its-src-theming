@@ -135,10 +135,10 @@
         </header>
         <form action="" method="post" class="dcf-form dcf-mb-8">
             <fieldset>
-                <legend class="dcf-mb-4 dcf-h6 dcf-txt-h6">Billing Details</legend>
+                <legend class="dcf-legend">Billing Details</legend>
 
-                <div class="dcf-form-group dcf-form-controls-inline">
-                    <label for="full-name-input" id="full-name-label">Name: </label>
+                <div class="dcf-d-flex dcf-form-group dcf-ai-baseline">
+                    <label for="full-name-input" id="full-name-label" class="dcf-label">Name: </label>
                     <input type="text" name="name" value="" placeholder="Enter your Name"
                            id="full-name-input"
                            aria-placeholder="Explicit Labelling"
@@ -150,8 +150,8 @@
                             </span>
                 </div>
 
-                <div class="dcf-form-group dcf-form-controls-inline" disabled>
-                    <label for="full-name-input" id="email-label">Email: </label>
+                <div class="dcf-d-flex dcf-form-group dcf-ai-baseline" disabled>
+                    <label for="full-name-input" id="email-label" class="dcf-label">Email: </label>
                     <input type="email" name="name" value="" tabindex="1" placeholder="email@emailaddress.com"
                            id="email-input"
                            aria-placeholder="email@emailaddress.com"
@@ -164,12 +164,12 @@
                             </span>
                 </div>
 
-                <div class="dcf-form-group dcf-input-group-form dcf-form-controls-inline">
+                <div class="dcf-d-flex dcf-form-group dcf-input-group-form dcf-ai-baseline">
                     <label for="position" id="position-level">I identify myself as a UNK:<sup class="dcf-required">*</sup>
                     </label>
                     <fieldset id="Position" name="Position" aria-labelledby="position-level"
-                              class="dcf-d-flex dcf-flex-col dcf-b-0 dcf-p-0">
-                        <legend class="dcf-mb-1">Position</legend>
+                              class="dcf-d-flex dcf-flex-col">
+                        <legend class="dcf-legend">Position</legend>
                         <div class="dcf-input-radio">
                             <input id="student_Position" name="Position" type="radio" value="student">
                             <label for="student_Position">student</label>
@@ -195,14 +195,14 @@
                     </fieldset>
                 </div>
 
-                <div class="dcf-form-group">
+                <div class="dcf-d-flex dcf-flex-col dcf-form-group">
                     <label for="comments">Please provide your questions or comments in the area below: <sup
                             class="dcf-required">*</sup></label>
                     <textarea cols="25" id="comments" name ="comments" rows="5" class="dcf-input-text-area"></textarea>
                 </div>
 
-                <div class="dcf-form-group dcf-form-controls-inline">
-                    <label for="Student_Profile" id="Student_Profile_Label">Students' Grade
+                <div class="dcf-d-flex dcf-form-group dcf-input-group dcf-ai-baseline">
+                    <label for="Student_Profile" id="Student_Profile_Label" class="dcf-label">Students' Grade
                         at Time of
                         Visit:<sup
                                 class="dcf-required">
@@ -218,7 +218,8 @@
                         <option value="Combination of Grades">Combination of Grades</option>
                         <option value="Current College Students">Current College Students</option>
                         <option value="Current College Students">Current College Students Current College Students
-                            Current College Students Current College Students Current tomato College Students</option>
+                            Current College Students Current College Students Current tomato College StudentsCurrent
+                            College Students</option>
                         <option value="Other">Other</option>
                     </select>
 
@@ -226,7 +227,7 @@
 
 
                 <fieldset class="dcf-d-flex dcf-flex-col dcf-form-group">
-                    <legend class="dcf-mb-1">Styled Checkboxes</legend>
+                    <legend class="dcf-legend">Styled Checkboxes</legend>
                     <div class="dcf-input-checkbox">
                         <input id="elements-form-checkboxA" type="checkbox" value="0"
                                aria-labelledby="elements-form-checkboxA-label">
@@ -256,23 +257,25 @@
                     </div>
                 </fieldset>
 
-                <div class="dcf-form-group dcf-form-controls-inline">
+                <div class="dcf-d-flex dcf-form-group dcf-ai-baseline">
                     <label for="example-elements-form-datetime-flatpickr">Date/time: </label>
                     <input id="example-elements-form-datetime-flatpickr" data-widget="flatpickr" type="text" class="flatpickr"
                            placeholder="Select Date & Time.."
                            readonly="readonly">
                 </div>
 
-                <div class="dcf-form-group dcf-form-controls-inline">
+                <div class="dcf-d-flex dcf-form-group dcf-ai-baseline">
                     <label for="elements-form-input-file"
-                           id="elements-form-input-file-label">
+                           id="elements-form-input-file-label"
+                           class="dcf-label"
+                          >
                         File input
                     </label>
                     <input id="elements-form-input-file" type="file"
                            aria-labelledby="elements-form-input-file-label" class="dcf-input-file">
                 </div>
 
-                <div class="dcf-form-group dcf-form-controls-inline">
+                <div class="dcf-d-flex dcf-form-group dcf-ai-baseline">
                     <label for="elements-form-input-range"
                            id="elements-form-input-range-label"
                           >
@@ -282,7 +285,7 @@
                            aria-labelledby="elements-form-input-range-label" class="dcf-input-range">
                 </div>
 
-                <div class="dcf-form-group dcf-form-controls-inline">
+                <div class="dcf-d-flex dcf-form-group dcf-ai-center">
                     <label for="tasks_comp">
                         Tasks Completed:</label>
                     <progress class="dcf-input-progress" value="50" max="100" id="tasks_comp"></progress>
@@ -360,8 +363,7 @@
                 <p class="dcf-mb-3">
                     <span class="dcf-sr-only" id="footer-address-label">Address</span>
                     <span
-                            aria-labelledby="footer-address-label" class="address">2504 9th Ave, Kearney, NE
-                        68849</span>
+                            aria-labelledby="footer-address-label">2504 9th Ave, Kearney, NE 68849</span>
                     <br/>
                     <span class="dcf-sr-only" id="footer-phone-label">Telephone</span>
                     <a href="tel:3088658441"
